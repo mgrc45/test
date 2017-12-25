@@ -1,7 +1,6 @@
-(setq markdown-xhtml-header-content
-      "<style type='text/css'>
+<style type='text/css'>
 img[alt='minipic'] { max-width: 150px; display:inline-block; }
-</style>")
+</style>
 
 # Proyecto Zafiro
 
