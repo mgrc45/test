@@ -1,7 +1,3 @@
-<style type='text/css'>
-img[alt='minipic'] { max-width: 150px; display:inline-block; }
-</style>
-
 # Proyecto Zafiro
 
 Permite realizar ajustes al registro del sistema Windows mejorando su desempeño o aplicando bloqueos al equipo. Cuenta con una base de datos de ajustes prestablecidos y un apartado para optimizar las conexiones a internet.
@@ -89,9 +85,7 @@ Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENS
 img[alt="minipic"] { max-width: 150px; display:inline-block; }
 
 ## Capturas de pantalla
-![img](screenshots/main.png | width=100)
-![minipic](screenshots/network.png|width=100)
-![img](screenshots/manager.png =150x80)
-![img](screenshots/explorer.png)
-<img src="screenshots/explorer.png" width="150" style="inline-block">
-<img src="screenshots/manager.png" width="150" style="inline-block">
+<img src="screenshots/main.png" width="250" style="inline-block">
+<img src="screenshots/network.png" width="250" style="inline-block">
+<img src="screenshots/manager.png" width="250" style="inline-block">
+<img src="screenshots/explorer.png" width="250" style="inline-block">
