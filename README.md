@@ -89,7 +89,9 @@ Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENS
 img[alt="minipic"] { max-width: 150px; display:inline-block; }
 
 ## Capturas de pantalla
-![img](screenshots/main.png)
-![minipic](screenshots/network.png)
-![img](screenshots/manager.png width=50%)
+![img](screenshots/main.png | width=100)
+![minipic](screenshots/network.png|width=100)
+![img](screenshots/manager.png =150x80)
 ![img](screenshots/explorer.png)
+<img src="screenshots/explorer.png" width="150" style="inline-block">
+<img src="screenshots/manager.png" width="150" style="inline-block">
