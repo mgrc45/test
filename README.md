@@ -14,7 +14,7 @@ Este proyecto fue creado para Windows XP de 32 bits, puede ejecutarlo en una má
 
 Este software es portable y se ejecuta sin requerir instalación. Sin embargo, como modifica valores del sistema es necesario ejecutarse con privilegios de administrador.
 
-Dentro de la carpeta raíz se encuentra la versión ejecutable
+Dentro del directorio raíz se encuentra la versión ejecutable
 
 ```
 bin/Suite Zafiro.exe
@@ -83,7 +83,7 @@ Vea también la lista de [contribuyentes](https://github.com/mgrc45/zafiro/contr
 Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENSE.md](LICENSE.md) para obtener más información.
 
 ## Capturas de pantalla
-![Screenshot](screenshots/main.png)
-![Screenshot](screenshots/network.png)
-![Screenshot](screenshots/manager.png)
-![Screenshot](screenshots/explorer.png)
+![screenshot](screenshots/main.png)
+![preview](screenshots/network.png)
+![img](screenshots/manager.png){ width=150px }
+![alt tag](screenshots/explorer.png "Titulo Explorer")
