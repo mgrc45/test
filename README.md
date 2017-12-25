@@ -17,7 +17,7 @@ Este software es portable y se ejecuta sin requerir instalación. Sin embargo, c
 Dentro de la carpeta raíz se encuentra la versión ejecutable
 
 ```
-Suite Zafiro.exe
+bin/Suite Zafiro.exe
 ```
 
 ## Descripción del programa
@@ -83,7 +83,7 @@ Vea también la lista de [contribuyentes](https://github.com/mgrc45/zafiro/contr
 Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENSE.md](LICENSE.md) para obtener más información.
 
 ## Capturas de pantalla
-![Screenshot](screenshot/main.png)
-![Screenshot](screenshot/network.png)
-![Screenshot](screenshot/manager.png)
-![Screenshot](screenshot/explorer.png)
+![Screenshot](screenshots/main.png)
+![Screenshot](screenshots/network.png)
+![Screenshot](screenshots/manager.png)
+![Screenshot](screenshots/explorer.png)
