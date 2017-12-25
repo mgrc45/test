@@ -86,8 +86,8 @@ img[alt="minipic"] { max-width: 150px; display:inline-block; }
 
 ## Capturas de pantalla
 <p style="display:inline-block">
-<img src="screenshots/main.png" width="250" style="display:inline-block">
-<img src="screenshots/network.png" width="250" style="display:inline-block">
-<img src="screenshots/manager.png" width="250" style="display:inline-block">
-<img src="screenshots/explorer.png" width="250" style="display:inline-block">
+<img src="screenshots/main.png" width="250">
+<img src="screenshots/network.png" width="250">
+<img src="screenshots/manager.png" width="250">
+<img src="screenshots/explorer.png" width="250">
 </p>
