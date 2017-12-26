@@ -83,9 +83,9 @@ Vea también la lista de [contribuyentes](https://github.com/mgrc45/zafiro/contr
 Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENSE.md](LICENSE.md) para obtener más información.
 
 ## Capturas de pantalla
-<p align="justify">
-<img src="screenshots/main.png" width="250">
-<img src="screenshots/network.png" width="250">
-<img src="screenshots/manager.png" width="250">
-<img src="screenshots/explorer.png" width="250">
+<p>
+<img src="screenshots/main.png" width="270">
+<img src="screenshots/network.png" width="270">
+<img src="screenshots/manager.png" width="270">
+<img src="screenshots/explorer.png" width="270">
 </p>
