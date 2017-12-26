@@ -84,8 +84,8 @@ Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENS
 
 ## Capturas de pantalla
 <p>
-<img src="screenshots/main.png" width="270">
-<img src="screenshots/network.png" width="270">
-<img src="screenshots/manager.png" width="270">
-<img src="screenshots/explorer.png" width="270">
+<img src="screenshots/main.png" width="260">
+<img src="screenshots/network.png" width="260">
+<img src="screenshots/manager.png" width="260">
+<img src="screenshots/explorer.png" width="260">
 </p>
