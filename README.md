@@ -24,28 +24,28 @@ bin/Suite Zafiro.exe
 
 La aplicación cuenta con tres secciones para realizar diferentes ajustes al sistema
 
-### Optimizador de Red
+### Optimizador de red
 
 Muestra opciones predefinidas para realizar ajustes a la tarjeta de red y agilizar la conexión a internet
 
 ```
-Pantalla principal > Optimizador de Red
+Pantalla principal > Optimizador de red
 ```
 
-### Administrador de Códigos
+### Administrador de códigos
 
 Permite la modificación de parámetros en el registro de sistema para habilitar o deshabilitar funciones específicas que proveen de seguridad, velocidad o personalización
 
 ```
-Pantalla principal > Administrador de Códigos
+Pantalla principal > Administrador de códigos
 ```
 
-### Explorador de Códigos
+### Explorador de códigos
 
 Permite navegar entre los registros de sistema con la finalidad de efectuar cambios no contemplados entre las opciones de esta aplicación
 
 ```
-Pantalla principal > Explorador de Códigos
+Pantalla principal > Explorador de códigos
 ```
 
 ## Herramientas usadas
@@ -83,7 +83,7 @@ Vea también la lista de [contribuyentes](https://github.com/mgrc45/zafiro/contr
 Este proyecto está licenciado bajo la licencia MIT. Consulte el archivo [LICENSE.md](LICENSE.md) para obtener más información.
 
 ## Capturas de pantalla
-<p>
+<p align="justify">
 <img src="screenshots/main.png" width="250">
 <img src="screenshots/network.png" width="250">
 <img src="screenshots/manager.png" width="250">
