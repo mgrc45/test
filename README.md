@@ -1,8 +1,8 @@
-# Lenguaje C
+# Lenguaje C/C++
 
-Para usar lenguaje C desde la terminal de linux necesitaremos preparar nuestro entorno de desarrollo.
+Para usar lenguaje C o C++ en un entorno linux sin necesidad de utilizar un IDE (Entorno de Desarrollo Integrado) necesitaremos preparar nuestra distribución. En este manual encontraras las bases para compilar codigo fuente, vincular librerias y ejecutar binarios desde la terminal de linux.
 
-## Compilador 
+### Compilador 
 
 GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa ejecutable binario en el lenguaje de la máquina donde ha de correr.
 
@@ -65,7 +65,7 @@ Para ejecutar desde un ambiente unix, escriba en la terminal la siguiente linea
 
 ## Librerias
 
-"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta: `/usr/include/`. Para consultar todas las rutas de búsqueda asociadas a un compilador escrita en la terminal
+"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador, escriba en la terminal
 
 ```sh
 gcc --verbose
@@ -73,13 +73,13 @@ g++ --verbose
 ld --verbose
 ```
 
-o para mostrar solo las rutas puede filtrar con grep y sed
+O para mostrar solo las rutas puede filtrar con grep y sed
 
 ```sh
 gcc -m64 -Xlinker --verbose  2>/dev/null | grep SEARCH | sed 's/SEARCH_DIR("=\?\([^"]\+\)"); */\1\n/g'  | grep -vE '^$'
 ```
 
-Sin embargo, existen librerías propietarias como "conio.h" de Borland o que únicamente se encuentran para windows por lo que existen proyectos que tratan de implementar estas librerías dentro de linux. Como son [conio4linux](https://sourceforge.net/projects/conio4linux/) o [ncurses](https://www.gnu.org/software/ncurses/).
+Sin embargo, existen librerías propietarias como "conio.h" de Borland o que únicamente se encuentran para windows por lo que existen proyectos que tratan de implementar estas librerías dentro de linux como son [conio4linux](https://sourceforge.net/projects/conio4linux/) o [ncurses](https://www.gnu.org/software/ncurses/).
 
 ```sh
 apt-get install libncurses5-dev libncursesw5-dev
@@ -103,13 +103,13 @@ x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ```
 
 ## Incluir librerias
-Adicionalmente a las rutas definidas desde el compilador (gcc) y el vinculador (ld). Puede incluir de manera manual alguna librería en el momento de realizar la compilación.
+Adicionalmente a las rutas definidas desde el compilador (gcc) y el vinculador (ld). Puede incluir de manera manual alguna librería al momento de realizar una compilación.
 
 ```sh
 gcc main.c -o main.exe -I /usr/x86_64-w64-mingw32/include/
 ```
 
-## Fuentes
+### Fuentes
 
 * [El compilador GCC](https://iie.fing.edu.uy/~vagonbar/gcc-make/gcc.htm)
 * [Options for Linking](https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html#Link-Options)
