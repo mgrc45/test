@@ -1,6 +1,6 @@
 # Lenguaje C/C++
 
-Para usar lenguaje C o C++ en un entorno linux sin necesidad de utilizar un IDE (Entorno de Desarrollo Integrado) necesitaremos preparar nuestra distribución. En este manual encontraras las bases para compilar codigo fuente, vincular librerias y ejecutar binarios desde la terminal de linux.
+Para usar lenguaje C o C++ en un entorno linux sin necesidad de utilizar un IDE (Entorno de Desarrollo Integrado) necesitaremos preparar nuestra distribución. En este manual encontraras las bases para compilar código fuente, vincular librerías y ejecutar binarios desde la terminal de linux.
 
 ### Compilador 
 
@@ -57,15 +57,15 @@ De forma predeterminada genera un compilado "a.out" pero podemos definir otro no
 
 ## Ejecutar
 
-Para ejecutar desde un ambiente unix, escriba en la terminal la siguiente linea
+Para ejecutar desde la terminal escriba la siguiente linea
 
 ```sh
 ./main.out
 ```
 
-## Librerias
+## Librerías
 
-"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador escriba
+"GNU Compiler Collection" instala una serie de librerías como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador escriba
 
 ```sh
 gcc --verbose
@@ -102,7 +102,7 @@ i686-w64-mingw32-g++ hello.cc -o hello32.exe     # 32-bit
 x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ```
 
-## Incluir librerias
+## Incluir librerías
 Puede incluir de manera manual alguna librería al momento de realizar una compilación
 
 ```sh
