@@ -12,13 +12,13 @@ La sigla GCC significa "GNU Compiler Collection". Originalmente significaba "GNU
 
 Verificamos que tengamos instalado el compilador
 
-```shell
+```sh
 gcc --version
 ```
 
 En caso contrario lo podemos instalar desde el repositorio
 
-```shell
+```sh
 apt-get install build-essential
 ```
 
@@ -44,32 +44,32 @@ main()
 }
 ```
 
-```shell
-gcc main.c -o main.exe
+Y desde terminal escribir la siguiente linea
+
+```bash
+gcc main.c -o main.out
 ```
 
-De forma predeterminada si no definimos el nombre de salida va a generar un ejecutable "a.out" por lo que en el ejemplo anterior definimos el nombre como "main.exe", cabe mencionar que la extension ".exe" no afecta la ejecución de un programa dentro de unix. Sin embargo, a manera de referencia es buena practica el uso extensiones para reconocer los archivos.
-
+De forma predeterminada genera un archivo compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o".
 
 ## Librerias
 
-De forma prederterminada "GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h entre otras. Estas se encuentran ubicadas en las rutas.
+De forma prederterminada "GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h entre otras. Estas se encuentran ubicadas en la ruta.
 
-```
+```zsh
 /usr/include/
-/usr/lib/*
 ```
 
 Y puede consultarse las rutas asociadas de busqueda usando 
 
-```
+```sh
 gcc --verbose
 ld --verbose
 ```
 
 o de forma mas especifica
 
-```
+```sh
  gcc -m64 -Xlinker --verbose  2>/dev/null | grep SEARCH | sed 's/SEARCH_DIR("=\?\([^"]\+\)"); */\1\n/g'  | grep -vE '^$'
 ```
 
@@ -78,12 +78,12 @@ Sin embargo existen librerias propietarias como conio.h de Borland, o que unicam
 
 En caso de contar con las librerias se pueden llamar de manera simple unicamente por su nombre
 
-```
+```sh
 gcc -lfoo main.c -o main.exe
 ```
 
 
-```
+```sh
 apt-get install libncurses5-dev libncursesw5-dev
 gcc -lcurses main.c -o main.exe
 ```
@@ -92,7 +92,7 @@ Para compilar
 
 
 
-```
+```sh
 apt-get install build-essential
 ```
 
