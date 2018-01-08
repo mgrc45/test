@@ -50,17 +50,13 @@ Y desde terminal escribir la siguiente linea
 gcc main.c -o main.out
 ```
 
-De forma predeterminada genera un archivo compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o".
+De forma predeterminada genera un compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o".
 
 ## Librerias
 
-De forma prederterminada "GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h entre otras. Estas se encuentran ubicadas en la ruta.
+De forma prederterminada "GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h entre otras. Estas se encuentran ubicadas en la ruta: `/usr/include/`.
 
-```zsh
-/usr/include/
-```
-
-Y puede consultarse las rutas asociadas de busqueda usando 
+Puede consultar las rutas asociadas de busqueda usando 
 
 ```sh
 gcc --verbose
@@ -69,7 +65,7 @@ ld --verbose
 
 o de forma mas especifica
 
-```sh
+```shell
  gcc -m64 -Xlinker --verbose  2>/dev/null | grep SEARCH | sed 's/SEARCH_DIR("=\?\([^"]\+\)"); */\1\n/g'  | grep -vE '^$'
 ```
 
