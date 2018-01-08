@@ -53,11 +53,11 @@ Y desde terminal escribir la siguiente línea
 gcc main.c -o main.out
 ```
 
-De forma predeterminada genera un compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o"
+De forma predeterminada genera un compilado "a.out" pero podemos definir otro nombre de salida con la opción "-o"
 
 ## Ejecutar
 
-Para ejecutar desde la terminal escriba la siguiente linea
+Para ejecutar desde la terminal escriba la siguiente línea
 
 ```sh
 ./main.out
