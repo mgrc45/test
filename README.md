@@ -6,7 +6,7 @@ Para usar lenguaje C desde la terminal de linux necesitaremos preparar nuestro e
 
 GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa ejecutable binario en el lenguaje de la máquina donde ha de correr.
 
-La sigla GCC significa "GNU Compiler Collection". Originalmente significaba "GNU C Compiler"; todavía se usa  GCC para designar una compilación en C. G++ refiere a una compilación en C++. 
+La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavia se usa GCC para designar una compilación en C. G++ refiere a una compilación en C++. 
 
 ### Verificamos
 
@@ -14,6 +14,7 @@ Verificamos que tengamos instalado el compilador
 
 ```sh
 gcc --version
+g++ --version
 ```
 
 En caso contrario lo podemos instalar desde el repositorio
@@ -56,14 +57,15 @@ De forma predeterminada genera un compilado "a.out" pero podemos definir otro no
 
 ## Librerias
 
-De forma prederterminada "GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h, time.h estas se encuentran en la ruta: `/usr/include/`. Puede consultar todas las rutas de busqueda asociadas a un compilador usando
+"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta: `/usr/include/`. Para consultar todas las rutas de busqueda asociadas a un compilador escrita en la terminal
 
 ```sh
 gcc --verbose
+g++ --verbose
 ld --verbose
 ```
 
-o de forma mas especifica
+o para mostrar solo las rutas puede filtrar con grep y sed
 
 ```sh
 gcc -m64 -Xlinker --verbose  2>/dev/null | grep SEARCH | sed 's/SEARCH_DIR("=\?\([^"]\+\)"); */\1\n/g'  | grep -vE '^$'
