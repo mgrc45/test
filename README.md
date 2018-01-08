@@ -6,7 +6,7 @@ Para usar lenguaje C desde la terminal de linux necesitaremos preparar nuestro e
 
 GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa ejecutable binario en el lenguaje de la máquina donde ha de correr.
 
-La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavia se usa GCC para designar una compilación en C. G++ refiere a una compilación en C++. 
+La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavía se usa GCC para designar una compilación en C y G++ para una compilación en C++.
 
 ### Verificamos
 
@@ -23,11 +23,11 @@ En caso contrario lo podemos instalar desde el repositorio
 apt-get install build-essential
 ```
 
-Este paquete instala gcc y g++ en su ultima version estable para su distribucion de linux.
+Este paquete instala gcc y g++ en la última versión estable para su distribución de linux.
 
 ## Compilar
 
-Para compilar nuestro primer programa solo debemos crear un archivo con un codigo simple de prueba.
+Para compilar nuestro primer programa solo debemos crear un archivo con un código simple de prueba.
 
 ```c
 /* Circulo.c: calcula el área de un círculo.
@@ -47,7 +47,7 @@ main()
 }
 ```
 
-Y desde terminal escribir la siguiente linea
+Y desde terminal escribir la siguiente línea
 
 ```sh
 gcc main.c -o main.out
@@ -55,9 +55,17 @@ gcc main.c -o main.out
 
 De forma predeterminada genera un compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o".
 
+## Ejecutar
+
+Para ejecutar desde un ambiente unix, escriba en la terminal la siguiente linea
+
+```sh
+./main.out
+```
+
 ## Librerias
 
-"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta: `/usr/include/`. Para consultar todas las rutas de busqueda asociadas a un compilador escrita en la terminal
+"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta: `/usr/include/`. Para consultar todas las rutas de búsqueda asociadas a un compilador escrita en la terminal
 
 ```sh
 gcc --verbose
@@ -71,7 +79,7 @@ o para mostrar solo las rutas puede filtrar con grep y sed
 gcc -m64 -Xlinker --verbose  2>/dev/null | grep SEARCH | sed 's/SEARCH_DIR("=\?\([^"]\+\)"); */\1\n/g'  | grep -vE '^$'
 ```
 
-Sin embargo existen librerias propietarias como "conio.h" de Borland o que unicamente se encuentran para windows por lo que existen proyectos que tratan de implementar estas librerias dentro de linux. Como son [conio4linux](https://sourceforge.net/projects/conio4linux/) o [ncurses](https://www.gnu.org/software/ncurses/).
+Sin embargo, existen librerías propietarias como "conio.h" de Borland o que únicamente se encuentran para windows por lo que existen proyectos que tratan de implementar estas librerías dentro de linux. Como son [conio4linux](https://sourceforge.net/projects/conio4linux/) o [ncurses](https://www.gnu.org/software/ncurses/).
 
 ```sh
 apt-get install libncurses5-dev libncursesw5-dev
@@ -95,14 +103,15 @@ x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ```
 
 ## Incluir librerias
-Adicionalmente a las rutas definidas desde el compilador (gcc) y el vinculador (ld). Puede incluir de manera manual alguna libreria en el momento de realizar la compilacion.
+Adicionalmente a las rutas definidas desde el compilador (gcc) y el vinculador (ld). Puede incluir de manera manual alguna librería en el momento de realizar la compilación.
 
 ```sh
 gcc main.c -o main.exe -I /usr/x86_64-w64-mingw32/include/
 ```
 
-Fuentes:
-https://iie.fing.edu.uy/~vagonbar/gcc-make/gcc.htm
-https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html#Link-Options
-https://stackoverflow.com/questions/9922949/how-to-print-the-ldlinker-search-path
-https://arrayfire.com/cross-compile-to-windows-from-linux/
+## Fuentes
+
+* [El compilador GCC](https://iie.fing.edu.uy/~vagonbar/gcc-make/gcc.htm)
+* [Options for Linking](https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html#Link-Options)
+* [How to print the linker search path](https://stackoverflow.com/questions/9922949/how-to-print-the-ldlinker-search-path)
+* [Cross Compile to Windows From Linux](https://arrayfire.com/cross-compile-to-windows-from-linux/)
