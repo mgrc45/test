@@ -27,7 +27,7 @@ Este paquete instala gcc y g++ en la última versión estable para su distribuci
 
 ## Compilar
 
-Para compilar nuestro primer programa solo debemos crear un archivo con un código simple de prueba.
+Para compilar nuestro primer programa solo debemos crear un archivo con un código simple de prueba
 
 ```c
 /* Circulo.c: calcula el área de un círculo.
@@ -53,7 +53,7 @@ Y desde terminal escribir la siguiente línea
 gcc main.c -o main.out
 ```
 
-De forma predeterminada genera un compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o".
+De forma predeterminada genera un compilado "a.out" pero podemos definir otro nombre de salida con la opcion "-o"
 
 ## Ejecutar
 
@@ -65,7 +65,7 @@ Para ejecutar desde un ambiente unix, escriba en la terminal la siguiente linea
 
 ## Librerias
 
-"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador, escriba en la terminal
+"GNU Compiler Collection" instala una serie de librerias como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador escriba
 
 ```sh
 gcc --verbose
@@ -88,7 +88,7 @@ gcc -lncurses main.c -o main.out
 
 ### Cross Compile
 
-Es posible compilar archivos ejecutables en windows desde un entorno linux, esto es posible a proyectos como [MinGW](https://sourceforge.net/p/mingw/mingw-org-wsl/ci/b4fe285fd979fae8364d3c70056584aaacd95e8b/tree/mingwrt/include/conio.h) y son usados por diversas aplicaciones como [wine](https://github.com/wine-mirror/wine/blob/master/include/msvcrt/conio.h), [codeblocks](www.codeblocks.org/downloads) y [metasploit](https://www.metasploit.com/download).
+Compilar archivos ejecutables en windows desde un entorno linux, es posible con proyectos como [MinGW](https://sourceforge.net/p/mingw/mingw-org-wsl/ci/b4fe285fd979fae8364d3c70056584aaacd95e8b/tree/mingwrt/include/conio.h) y son usados por diversas aplicaciones como [wine](https://github.com/wine-mirror/wine/blob/master/include/msvcrt/conio.h), [codeblocks](www.codeblocks.org/downloads) y [metasploit](https://www.metasploit.com/download).
 
 ```sh
 sudo apt-get install mingw-w64
@@ -103,7 +103,7 @@ x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ```
 
 ## Incluir librerias
-Adicionalmente a las rutas definidas desde el compilador (gcc) y el vinculador (ld). Puede incluir de manera manual alguna librería al momento de realizar una compilación.
+Puede incluir de manera manual alguna librería al momento de realizar una compilación
 
 ```sh
 gcc main.c -o main.exe -I /usr/x86_64-w64-mingw32/include/
