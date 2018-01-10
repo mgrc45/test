@@ -6,7 +6,7 @@ Para usar lenguaje C o C++ en un entorno linux sin necesidad de utilizar un IDE 
 
 GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa ejecutable binario en el lenguaje de la máquina donde ha de correr.
 
-La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavía se usa GCC para designar una compilación en C y G++ para una compilación en C++.
+> La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavía se usa GCC para designar una compilación en C y G++ para una compilación en C++
 
 ### Verificamos
 
@@ -23,7 +23,7 @@ En caso contrario lo podemos instalar desde el repositorio
 apt-get install build-essential
 ```
 
-Este paquete instala gcc y g++ en la última versión estable para su distribución de linux.
+Este paquete instala gcc y g++ en la última versión estable para su distribución de linux
 
 ## Compilar
 
