@@ -4,7 +4,7 @@ Para usar lenguaje C o C++ en un entorno linux sin necesidad de utilizar un IDE 
 
 ## Compilador 
 
-GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa binario ejecutable en el lenguaje de la máquina destino.
+GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un archivo binario ejecutable en el lenguaje de la máquina destino.
 
 > La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavía se usa GCC para designar una compilación en C y G++ para una compilación en C++
 
@@ -65,7 +65,7 @@ Para ejecutar desde la terminal escriba la siguiente línea
 
 ## Librerías
 
-"GNU Compiler Collection" instala una serie de librerías como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador escriba
+"GNU Compiler Collection" instala una serie de librerías como stdio.h, stdlib.h, strings.h, complex.h y time.h estas se encuentran en la ruta `/usr/include/`. Para consultar las rutas de búsqueda asociadas a un compilador escriba.
 
 ```sh
 gcc --verbose
