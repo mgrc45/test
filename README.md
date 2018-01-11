@@ -1,37 +1,35 @@
 # Programacion
 
-Un programa es un conjunto de instrucciones que el ordenador puede interpretar y ejecutar para realizar una tarea especifica. Se codifica usando algun lenguaje de programación y con la ayuda de un compilador se traduce a lenguaje maquina. A esta traduccion se le conoce como binario o simplemente ejecutable.
+Un programa es un conjunto de instrucciones que el ordenador puede interpretar y ejecutar para realizar una tarea específica. Se codifica usando algún lenguaje de programación y con la ayuda de un compilador se traduce a lenguaje máquina. A esta traducción se le conoce como binario o simplemente ejecutable.
 
-´´´
-De acuerdo a Bohm y Jacopini un programa puede ser escrito usando únicamente 3 estructuras (Secuencial, Selectiva y Repetitiva). Ademas de poseer solo un punto de entrada y uno de salida. Sin bucles infinitos y con almenos un camino hasta el final. A esto se le conoce como el teorema de "Bohm y Jacopini".
-´´´
+> De acuerdo a Bohm y Jacopini un programa puede ser escrito usando únicamente 3 estructuras (Secuencial, Selectiva y Repetitiva). Además de poseer solo un punto de entrada y uno de salida. Sin bucles infinitos y con al menos un camino hasta el final. A esto se le conoce como el teorema de "Bohm y Jacopini".
 
-Un lenguaje de programación es un conjunto de simbolos ordenados por reglas sintacticas y semanticas; que componen un lenguaje formal entendible para el ser humano. Mientras mas cercano al lenguaje natural se dice que es de mayor nivel. 
+Un lenguaje de programación es un conjunto de símbolos ordenados por reglas sintácticas y semánticas; que componen un lenguaje formal entendible para el ser humano. Mientras más cercano al lenguaje natural se dice que es de mayor nivel. 
 
-De acuerdo a esta clasificacion tenemos
-- Lenguajes de alto nivel: VB, C, C#, PHP, Java
-- Lenguaje de medio nivel: Ensamblador (MOV 1AX,4CH)
-- Lenguaje de bajo nivel: Binario, tambien llamado lenguaje maquina (10101001)
+De acuerdo a esta clasificación tenemos
+- **Lenguajes de alto nivel**: VB, C, C#, PHP, Java
+- **Lenguaje de medio nivel**: Ensamblador (MOV 1AX,4CH)
+- **Lenguaje de bajo nivel**: Binario, también llamado lenguaje maquina (10101001)
 
 
-Utilizando un lenguaje de programación podemos escribir un codigo que sera la fuente de nuestro programa, mejor conocido como **codigo fuente**.
+Utilizando un lenguaje de programación podemos escribir un código que será la fuente de nuestro programa, mejor conocido como **código fuente**.
 
-El compilador es el encargado de traducir el codigo fuente pasando por un codigo objeto o directamente a lenguaje maquina. Para realizar esta tarea se encarga de enlazar librerias y analizar el codigo fuente para asegurarse de que cumpla con las reglas del lenguaje de programacion.
-- Analisis Léxico: Valida que el conjunto de símbolos o instrucciones correspondan al lenguaje.
-- Analisis Sintáctico: Valida las reglas para combinar de forma correcta las instrucciones.
-- Analisis Semántico: Valida el significado de cada linea del codigo fuente.
+El compilador es el encargado de traducir el código fuente pasando por un código objeto o directamente a lenguaje máquina. Para realizar esta tarea se encarga de enlazar librerías y analizar el código fuente para asegurarse de que cumpla con las reglas del lenguaje de programación.
+- **Análisis Léxico**: Valida que el conjunto de símbolos o instrucciones correspondan al lenguaje.
+- **Análisis Sintáctico**: Valida las reglas para combinar de forma correcta las instrucciones.
+- **Análisis Semántico**: Valida el significado de cada línea del código fuente.
 
 Interprete
-Existen lenguajes de programacion que no son compilados sino leidos e interpretados directamente desde el codigo fuente. Por lo que no generan un ejecutable. Esto resta velocidad en cuanto a ejecucion, sin embargo es util para ser ejecutado en diferentes plataformas como es el caso de Java que es interpretado por la maquina virtual de java (JVM).
+Existen lenguajes de programación que no son compilados sino leídos e interpretados directamente desde el código fuente. Por lo que no generan un ejecutable. Esto resta velocidad en cuanto a ejecución, sin embargo es útil para ser ejecutado en diferentes plataformas como es el caso de Java que es interpretado por la máquina virtual de java (JVM).
 
-La programacion para su estudio fue clasificada en 
-- Programación estructurada: Esta incluye el uso de diseño descendente (top-down), la division de problemas complejos en varios simples y el uso de estructuras basicas (secuenciales, selectivas y repetitivas).
-- Programación modular: Consta de varias secciones que interactuan através de llamadas a procedimientos ó funciones. Y su mayor ventaja es la reutilizacion de codigo y la facilidad para depurar el mismo. Ya que se puede modificar un modulo sin afectar a otros.
-- Programacón orientada a objetos: Consiste en la utilizacion de estructuras de codigo, las cuales poseen propiedades y atributos; por lo cual reciben el nombre de objetos.
+La programación para su estudio fue clasificada en 
+- Programación estructurada: Esta incluye el uso de diseño descendente (top-down), la división de problemas complejos en varios simples y el uso de estructuras básicas (secuenciales, selectivas y repetitivas).
+- Programación modular: Consta de varias secciones que interactúan a través de llamadas a procedimientos o funciones. Y su mayor ventaja es la reutilización de código y la facilidad para depurar el mismo. Ya que se puede modificar un módulo sin afectar a otros.
+- Programación orientada a objetos: Consiste en la utilización de estructuras de código, las cuales poseen propiedades y atributos; por lo cual reciben el nombre de objetos.
 
-El objetivo original de la programacion consiste en la automatizacion de tareas, siendo la tarea del programador la abstraccion, resolucion y representacion de una solucion en un lenguaje de programacion. Es de este proceso que surge la algoritmia, que es la ciencia y arte de solucionar problemas.
+El objetivo original de la programación consiste en la automatización de tareas, siendo la tarea del programador la abstracción, resolución y representación de una solución en un lenguaje de programación. Es de este proceso que surge la algoritmia, que es la ciencia y arte de solucionar problemas.
 
-La algoritmia consiste en la resolucion de problemas por metodos no triviales, es decir resolver un problema de la manera mas eficiente posible. Ya sea usando el menor numero de recursos o el menor tiempo computacional.
+La algoritmia consiste en la resolución de problemas por métodos no triviales, es decir resolver un problema de la manera más eficiente posible. Ya sea usando el menor número de recursos o el menor tiempo computacional.
 
 ## Buenas practicas
 
