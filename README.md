@@ -22,10 +22,10 @@ El compilador es el encargado de traducir el código fuente pasando por un códi
 Interprete
 Existen lenguajes de programación que no son compilados sino leídos e interpretados directamente desde el código fuente. Por lo que no generan un ejecutable. Esto resta velocidad en cuanto a ejecución, sin embargo es útil para ser ejecutado en diferentes plataformas como es el caso de Java que es interpretado por la máquina virtual de java (JVM).
 
-La programación para su estudio fue clasificada en 
+La programación fue clasificada para su estudio en 
 - **Programación estructurada**: Esta incluye el uso de diseño descendente (top-down), la división de problemas complejos en varios simples y el uso de estructuras básicas (secuenciales, selectivas y repetitivas).
 - **Programación modular**: Consta de varias secciones que interactúan a través de llamadas a procedimientos o funciones. Su mayor ventaja es la reutilización de código y la facilidad para depurar el mismo. Ya que se puede modificar un módulo sin afectar a otros.
-- **Programación orientada a objetos**: Consiste en la utilización de estructuras de código, las cuales poseen propiedades y atributos; por lo cual reciben el nombre de objetos.
+- **Programación orientada a objetos (POO)**: Consiste en la utilización de estructuras de código, las cuales poseen propiedades y atributos; por lo cual reciben el nombre de objetos.
 
 El objetivo original de la programación consiste en la automatización de tareas, siendo la tarea del programador la abstracción, resolución y representación de una solución en un lenguaje de programación. Es de este proceso que surge la algoritmia, que es la ciencia y arte de solucionar problemas.
 
