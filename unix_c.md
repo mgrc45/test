@@ -2,9 +2,9 @@
 
 Para usar lenguaje C o C++ en un entorno linux sin necesidad de utilizar un IDE (Entorno de Desarrollo Integrado) necesitaremos preparar nuestra distribución. En este manual encontraras las bases para compilar código fuente, vincular librerías y ejecutar binarios desde la terminal de linux.
 
-### Compilador 
+## Compilador 
 
-GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa ejecutable binario en el lenguaje de la máquina donde ha de correr.
+GCC es un compilador integrado del proyecto GNU para C, C++, Objective C y Fortran; es capaz de recibir un programa fuente en cualquiera de estos lenguajes y generar un programa binario ejecutable en el lenguaje de la máquina destino.
 
 > La sigla GCC significa "GNU Compiler Collection", aun que originalmente significaba "GNU C Compiler" por lo que todavía se usa GCC para designar una compilación en C y G++ para una compilación en C++
 
@@ -102,7 +102,7 @@ i686-w64-mingw32-g++ hello.cc -o hello32.exe     # 32-bit
 x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ```
 
-## Incluir librerías
+### Incluir librerías
 Puede incluir de manera manual alguna librería al momento de realizar una compilación
 
 ```sh
