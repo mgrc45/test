@@ -50,7 +50,7 @@ const area = base * altura;
 
 ## Variables
 
-Tipos de dato primitivos
+Tipos de datos primitivos
 ```c++
 bool a = true;
 char b = 'c';
@@ -67,6 +67,20 @@ double f = 1.7*10^308;
 string g = "Hola mundo!";
 char h = {'H','o','l','a'};
 enum Dias {Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado};
+```
+
+Locales y globales
+
+```c++
+#include <iostream>
+
+int global = 5;
+
+int main(void)
+{
+ int local = 10;
+ return 0;
+}
 ```
 
 ## Entrada/Salida
@@ -100,7 +114,7 @@ printf("Flotante con presicion: %4.2f",3.1416);
 
 ```c++
 for(int cnt=0; cnt<6; cnt++) 
-  printf("%d\n",cnt);
+ cout<<cnt<<"\n";
 ```
 
 ```c++
@@ -121,7 +135,7 @@ do
 } while (cnt < 5);
 ```
 
-## Desiciones
+## Desicion
 
 ```c++
 int a=5,b=10;
@@ -138,7 +152,7 @@ int a=5,b=10;
 int c = (a > b)? a: b;
 ```
 
-## Desiciones multiples
+## Desicion multiple
 
 ```c++
 int Opc,a=10,b=5;
@@ -171,5 +185,29 @@ switch (Opc)
  default:printf("Salida\n");
 }
 ```
+
+## Apuntadores
+
+Solo algunos lenguajes de programacion pueden interactuar con los bloques de memoria tal es el caso de lenguaje C y C++.
+
+```c++
+int a=5;
+cout<<a;//Muestra el valor en memoria
+cout<<&a;//Muestra la direccion en memoria
+```
+
+Un puntero es una variable que almacena una direccion en memoria
+
+```c++
+int a = 5;
+int * aPointer;
+
+aPointer = &a;//Asignamos la direccion de "a"
+*aPointer = 10;//Asignamos un nuevo valor
+
+cout<<a; //Imprime "10"
+```
+
+
 
 
