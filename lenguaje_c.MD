@@ -156,33 +156,33 @@ int c = (a > b)? a: b;
 
 ```c++
 int Opc,a=10,b=5;
-printf("Elija una opcion\n");
-printf("1) Suma\n");
-printf("2) Resta\n");
-printf("3) Multiplicacion\n");
-printf("4) Division\n");
-printf("5) Modulo\n");
-printf("Otro) Salida\n");
-scanf("%d",&Opc);
+cout<<"Elija una opcion\n";
+cout<<"1) Suma\n";
+cout<<"2) Resta\n";
+cout<<"3) Multiplicacion\n";
+cout<<"4) Division\n";
+cout<<"5) Modulo\n";
+cout<<"Otro) Salida\n";
+cin<<opc;
 
-switch (Opc)
+switch(opc)
 {
  case 1:
-  printf("Suma %d\n",a+b);
+  cout<<"Suma "<<(a+b);
  break;
  case 2:
-  printf("Resta %d\n",a-b);
+  cout<<"Resta "<<(a-b);
  break;
  case 3:
-  printf("Multiplicacion %d\n",a*b);
+  cout<<"Multiplicacion "<<(a*b);
  break;
  case 4:
-  printf("Division %d\n",a/b);
+  cout<<"Division "<<(a/b);
  break;
  case 4:
-  printf("Modulo %d\n",a%b);
+  cout<<"Modulo "<<(a%b);
  break;
- default:printf("Salida\n");
+ default:cout<<"Salida";
 }
 ```
 
