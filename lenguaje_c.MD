@@ -22,9 +22,30 @@ int main(void)
 
 ## Constantes
 
+Constantes literales
+
 ```c++
 #define PI 3.1416
 const double pi = 3.1416;
+```
+
+```c++
+#include <climits>
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+ int a = INT_MAX;
+ int b = INT_MIN;
+ return 0;
+}
+```
+
+Constantes simbolicas
+
+```c++
+const area = base * altura;
 ```
 
 ## Variables
@@ -33,7 +54,10 @@ Tipos de dato primitivos
 ```c++
 bool a = true;
 char b = 'c';
+char b1 = 64; //ASCII 64 = @
 int c = 32767;
+int c1 = 0B101010; //Binario
+int c2 = 0xfc; //Hexadecimal
 long d = 2147483647;
 float e = 3.4*10^8;
 double f = 1.7*10^308;
@@ -42,25 +66,34 @@ double f = 1.7*10^308;
 ```c++
 string g = "Hola mundo!";
 char h = {'H','o','l','a'};
-enum persona {string nombre, int edad, bool generoM};
+enum Dias {Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado};
 ```
 
 ## Entrada/Salida
 
 ```c++
-char v;
-scanf("Teclee un caracter %c",&v);
-scanf("Teclee una cadena %s",&v);
+char chr;
+cin>>chr;
+scanf("Teclee un caracter %c",&chr);
 
-printf("Escriba su nombre\n");
+string cad;
+cin>>str;
+scanf("Teclee una cadena %s",&cad);
 
-printf("Cal 1\tCal 2\tCal 3\n");
-printf("8.5\t7.2\t10\n");
-printf("8.6\t7.6\t9.3\n");
+cout<<"Hola mundo!";
 
-printf("Beep \a");
+cout<<"Cal 1\tCal 2\tCal 3\n";
+cout<<"8.5\t7.2\t10\n";
+cout<<"8.6\t7.6\t9.3\n";
+cout<<"Beep \a";
 
-cout<< "El promedio es 8.3";
+printf("Caracter: %c",chr);
+printf("Cadena: %s",str);
+
+printf("Entero: %d",1);
+printf("Flotante: %4.2f",3.1416);
+printf("Flotante sin ceros: %g",1.25000);
+printf("Flotante con presicion: %4.2f",3.1416);
 ```
 
 ## Ciclos
@@ -93,9 +126,9 @@ do
 ```c++
 int a=5,b=10;
 if (a > b) 
-  printf("A es mayor que B");
+  cout<<"A es mayor que B";
 else 
-  printf("B es mayor que A");
+  cout<<"B es mayor que A";
 ```
 
 Condicion ternaria
@@ -138,7 +171,5 @@ switch (Opc)
  default:printf("Salida\n");
 }
 ```
-
-
 
 
