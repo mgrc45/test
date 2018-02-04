@@ -12,12 +12,19 @@ int main(void)
  return 0;
 }
 ```
+## Comentarios
+```c++
+//Un comentario de una linea
+
+/* Tambien puede realizar
+ comentarios multilinea */
+```
 
 ## Constantes
 
 ```c++
-const double pi = 3.1416;
 #define PI 3.1416
+const double pi = 3.1416;
 ```
 
 ## Variables
@@ -33,8 +40,9 @@ double f = 1.7*10^308;
 ```
 
 ```c++
-string g = "Hola mundo!";
+std::string g = "Hola mundo!";
 char h = {'H','o','l','a'};
+enum persona {string nombre,int edad,bool generoM};
 ```
 
 ## Entrada/Salida
