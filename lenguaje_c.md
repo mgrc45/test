@@ -182,7 +182,8 @@ switch(opc)
  case 4:
   cout<<"Modulo "<<(a%b);
  break;
- default:cout<<"Salida";
+ default:
+  cout<<"Salida";
 }
 ```
 
@@ -235,12 +236,15 @@ cout<<"aRef: "<<aRef<<"\n";
 //Definimos la cabecera de la función
 int Potencias(int, int &, int &); 
 
-int main()
+int main(void)
 {
  int numero,cuadrado,cubo;
+
  cout<<"Ingresa un número positivo: ";
  cin>>numero;
+
  Potencias(numero, cuadrado, cubo);
+
  cout<<"Numero: "<<numero<<"\n";
  cout<<"Cuadrado: "<<cuadrado<<"\n";
  cout<<"Cubo: "<<cubo<<"\n";
@@ -255,5 +259,46 @@ int Potencias(int numero, int &rCuadrado, int &rCubo)
 }
 ```
 
+## Clases
+
+```c++
+#include <iostream>
+
+class Estudiante
+{
+ public:
+  Estudiante(); //Constructor
+  ~Estudiante(); //Destructor
+ private:
+  int vCod; //Código del estudiante
+};
+
+//Definimos al constructor
+Estudiante::Estudiante()
+{
+ cout<<"LLamando al constructor.\n";
+ vCod = 108;
+}
+
+//Definimos el destructor
+Estudiante::~Estudiante()
+{
+ cout<<"LLamando al destructor.\n";
+}
+
+int main(void)
+{
+ cout<<"Estudiante Alvaro...\n";
+ Estudiante Alvaro;
+
+ cout<<"Estudiante *pSid = new Estudiante...\n";
+ Estudiante *pSid = new Estudiante;
+
+ cout<<"delete pSid...\n";
+ delete pSid;
+
+ cout<<"Terminando la demostración...\n";
+}
+```
 
 
