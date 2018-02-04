@@ -188,7 +188,7 @@ switch (Opc)
 
 ## Apuntadores
 
-Solo algunos lenguajes de programacion pueden interactuar con los bloques de memoria tal es el caso de lenguaje C y C++.
+Solo algunos lenguajes de programacion pueden interactuar con los bloques de memoria tal es el caso de lenguaje C y C++
 
 ```c++
 int a=5;
@@ -208,6 +208,52 @@ aPointer = &a;//Asignamos la direccion de "a"
 cout<<a; //Imprime "10"
 ```
 
+## Referencias
+
+Es una variable que apunta hacia otra variable, por lo que si la primera cambia la segunda tambien
+
+```c++
+int a;
+int &aRef;
+
+a = 5;
+
+cout<<"a: "<<a<<"\n";
+cout<<"aRef: "<<aRef<<"\n";
+
+aRef = 10;
+
+cout<<"a: "<<a<<"\n";
+cout<<"aRef: "<<aRef<<"\n";
+```
+
+## Funciones
+
+```c++
+#include <iostream>
+
+//Definimos la cabecera de la función
+int Potencias(int, int &, int &); 
+
+int main()
+{
+ int numero,cuadrado,cubo;
+ cout<<"Ingresa un número positivo: ";
+ cin>>numero;
+ Potencias(numero, cuadrado, cubo);
+ cout<<"Numero: "<<numero<<"\n";
+ cout<<"Cuadrado: "<<cuadrado<<"\n";
+ cout<<"Cubo: "<<cubo<<"\n";
+}
+
+//Paso por valor: numero
+//Paso por referencias: rCuadrado, rCubo
+int Potencias(int numero, int &rCuadrado, int &rCubo)
+{
+ rCuadrado = numero*numero;
+ rCubo = numero*numero*numero;
+}
+```
 
 
 
