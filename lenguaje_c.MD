@@ -40,9 +40,9 @@ double f = 1.7*10^308;
 ```
 
 ```c++
-std::string g = "Hola mundo!";
+string g = "Hola mundo!";
 char h = {'H','o','l','a'};
-enum persona {string nombre,int edad,bool generoM};
+enum persona {string nombre, int edad, bool generoM};
 ```
 
 ## Entrada/Salida
@@ -65,16 +65,32 @@ cout<< "El promedio es 8.3";
 
 ## Ciclos
 
-Ciclo for
+```c++
+for(int cnt=0; cnt<6; cnt++) 
+  printf("%d\n",cnt);
+```
 
-```c
-for(int c=0; c<6; c++) 
-  printf("%d\n",c);
+```c++
+int cnt = 0;
+while (cnt < 5)
+{
+ cout<<cnt<<"\n";
+ cnt++;
+}
+```
+
+```c++
+int cnt = 0;
+do
+{
+ cout<<cnt<<"\n";
+ cnt++;
+} while (cnt < 5);
 ```
 
 ## Desiciones
 
-```c
+```c++
 int a=5,b=10;
 if (a > b) 
   printf("A es mayor que B");
@@ -82,15 +98,23 @@ else
   printf("B es mayor que A");
 ```
 
+Condicion ternaria
+
+```c++
+int a=5,b=10;
+int c = (a > b)? a: b;
+```
+
 ## Desiciones multiples
 
-```c
+```c++
 int Opc,a=10,b=5;
 printf("Elija una opcion\n");
 printf("1) Suma\n");
 printf("2) Resta\n");
 printf("3) Multiplicacion\n");
 printf("4) Division\n");
+printf("5) Modulo\n");
 printf("Otro) Salida\n");
 scanf("%d",&Opc);
 
@@ -107,6 +131,9 @@ switch (Opc)
  break;
  case 4:
   printf("Division %d\n",a/b);
+ break;
+ case 4:
+  printf("Modulo %d\n",a%b);
  break;
  default:printf("Salida\n");
 }
