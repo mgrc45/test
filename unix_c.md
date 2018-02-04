@@ -112,6 +112,7 @@ gcc main.c -o main.exe -I /usr/x86_64-w64-mingw32/include/
 ### Fuentes
 
 * [El compilador GCC](https://iie.fing.edu.uy/~vagonbar/gcc-make/gcc.htm)
+* [Compilador GCC-w64](https://sourceforge.net/projects/mingw-w64/)
 * [Options for Linking](https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html#Link-Options)
 * [How to print the linker search path](https://stackoverflow.com/questions/9922949/how-to-print-the-ldlinker-search-path)
 * [Cross Compile to Windows From Linux](https://arrayfire.com/cross-compile-to-windows-from-linux/)
