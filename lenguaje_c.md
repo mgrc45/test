@@ -1,4 +1,4 @@
-# Guia rapida: Lenguaje C
+# Guía rápida: Lenguaje C
 
 ## Cuerpo del programa
 
@@ -42,7 +42,7 @@ int main(void)
 }
 ```
 
-Constantes simbolicas
+Constantes simbólicas
 
 ```c++
 const area = base * altura;
@@ -168,7 +168,7 @@ do
 } while (cnt < 5);
 ```
 
-## Desicion
+## Decisión
 
 ```c++
 int a=5,b=10;
@@ -185,7 +185,7 @@ int a=5,b=10;
 int c = (a > b)? a: b;
 ```
 
-## Desicion multiple
+## Decisión múltiple
 
 ```c++
 int opc,a=10,b=5;
@@ -222,7 +222,7 @@ switch(opc)
 
 ## Apuntadores
 
-Solo algunos lenguajes de programacion pueden interactuar con los bloques de memoria tal es el caso de lenguaje C y C++
+Solo algunos lenguajes de programación pueden interactuar con los bloques de memoria tal es el caso de lenguaje C y C++
 
 ```c++
 int a=5;
@@ -230,7 +230,7 @@ cout<<a<<"\n";//Muestra el valor en memoria
 cout<<&a<<"\n";//Muestra la direccion en memoria
 ```
 
-Un puntero es una variable que almacena una direccion en memoria
+Un puntero es una variable que almacena una dirección en memoria
 
 ```c++
 int a = 5;
@@ -244,7 +244,7 @@ cout<<a; //Imprime "10"
 
 ## Referencias
 
-Es una variable que apunta hacia otra variable, por lo que si la primera cambia la segunda tambien
+Es una variable que apunta hacia otra variable, por lo que si la primera cambia la segunda también
 
 ```c++
 int a;
