@@ -59,13 +59,13 @@ int c = 32767;
 int c1 = 0B101010; //Binario
 int c2 = 0xfc; //Hexadecimal
 long d = 2147483647;
-float e = 3.4*10^8;
+float e = 3.4*100000000;
 double f = 1.7*10^308;
 ```
 
 ```c++
 string g = "Hola mundo!";
-char h = {'H','o','l','a'};
+char h[] = {'H','o','l','a'};
 enum Dias {Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado};
 ```
 
@@ -86,34 +86,67 @@ int main(void)
 ## Entrada/Salida
 
 ```c++
-char chr;
-cin>>chr;
-scanf("Teclee un caracter %c",&chr);
+#include <iostream>
+using namespace std;
 
-string cad;
-cin>>str;
-scanf("Teclee una cadena %s",&cad);
+int main(void)
+{
+ char chr;
+ cout<<"Teclea un caracter: ";
+ cin>>chr;
 
-cout<<"Hola mundo!";
+ string str;
+ cout<<"Teclea una cadena: ";
+ cin>>str;
+ cout<<"\n";
 
-cout<<"Cal 1\tCal 2\tCal 3\n";
-cout<<"8.5\t7.2\t10\n";
-cout<<"8.6\t7.6\t9.3\n";
-cout<<"Beep \a";
+ cout<<"Caracter: "<<chr<<"\n";
+ cout<<"Cadena: "<<str<<"\n";
+ cout<<"\n";
 
-printf("Caracter: %c",chr);
-printf("Cadena: %s",str);
+ cout<<"Cal 1\tCal 2\tCal 3\n";
+ cout<<"8.5\t7.2\t10\n";
+ cout<<"8.6\t7.6\t9.3\n";
+ cout<<"\n";
 
-printf("Entero: %d",1);
-printf("Flotante: %4.2f",3.1416);
-printf("Flotante sin ceros: %g",1.25000);
-printf("Flotante con presicion: %4.2f",3.1416);
+ cout<<"Beep \a"<<"\n";
+
+ return 0;
+}
+```
+
+```c++
+#include <stdio.h>
+using namespace std;
+
+int main(void)
+{
+ char chr;
+ printf("Teclee un caracter: ");
+ scanf("%c",&chr);
+
+ char str[80];
+ printf("Teclee una cadena: ");
+ scanf("%s",&str);
+ printf("\n");
+
+ printf("Caracter: %c\n",chr);
+ printf("Cadena: %s\n",str);
+ printf("\n");
+
+ printf("Entero: %d\n",1);
+ printf("Flotante: %4.2f\n",3.1416);
+ printf("Flotante sin ceros: %g\n",1.25000);
+ printf("Flotante con presicion: %4.2f\n",3.1416);
+
+ return 0;
+}
 ```
 
 ## Ciclos
 
 ```c++
-for(int cnt=0; cnt<6; cnt++) 
+for(int cnt=0; cnt<5; cnt++) 
  cout<<cnt<<"\n";
 ```
 
@@ -140,9 +173,9 @@ do
 ```c++
 int a=5,b=10;
 if (a > b) 
-  cout<<"A es mayor que B";
+  cout<<"A es mayor que B\n";
 else 
-  cout<<"B es mayor que A";
+  cout<<"B es mayor que A\n";
 ```
 
 Condicion ternaria
@@ -155,7 +188,7 @@ int c = (a > b)? a: b;
 ## Desicion multiple
 
 ```c++
-int Opc,a=10,b=5;
+int opc,a=10,b=5;
 cout<<"Elija una opcion\n";
 cout<<"1) Suma\n";
 cout<<"2) Resta\n";
@@ -179,7 +212,7 @@ switch(opc)
  case 4:
   cout<<"Division "<<(a/b);
  break;
- case 4:
+ case 5:
   cout<<"Modulo "<<(a%b);
  break;
  default:
@@ -193,8 +226,8 @@ Solo algunos lenguajes de programacion pueden interactuar con los bloques de mem
 
 ```c++
 int a=5;
-cout<<a;//Muestra el valor en memoria
-cout<<&a;//Muestra la direccion en memoria
+cout<<a<<"\n";//Muestra el valor en memoria
+cout<<&a<<"\n";//Muestra la direccion en memoria
 ```
 
 Un puntero es una variable que almacena una direccion en memoria
@@ -248,6 +281,8 @@ int main(void)
  cout<<"Numero: "<<numero<<"\n";
  cout<<"Cuadrado: "<<cuadrado<<"\n";
  cout<<"Cubo: "<<cubo<<"\n";
+
+ return 0;
 }
 
 //Paso por valor: numero
@@ -298,6 +333,8 @@ int main(void)
  delete pSid;
 
  cout<<"Terminando la demostración...\n";
+
+ return 0;
 }
 ```
 
