@@ -177,10 +177,10 @@ switch(opc)
   cout<<"Resta "<<(a-b);
  break;
  case 3:
-  cout<<"Multiplicacion "<<(a*b);
+  cout<<"Multiplicación "<<(a*b);
  break;
  case 4:
-  cout<<"Division "<<(a/b);
+  cout<<"División "<<(a/b);
  break;
  case 5:
   cout<<"Modulo "<<(a%b);
