@@ -238,6 +238,12 @@ for(i=0; i<j; i++) cout<<b[i]<<" ";
 cout<<"\n";
 ```
 
+## Cadenas
+
+```c++
+string b = "Hello World!";
+```
+
 ## Apuntadores
 
 Solo algunos lenguajes de programación pueden interactuar con los bloques de memoria tal es el caso de lenguaje C y C++
@@ -417,4 +423,7 @@ int main(void)
 }
 ```
 
+## Notas
+
+Esta guia fue realizada para aprender rapidamente lenguaje c, por lo que no se incluyen temas como son herencia, polimorfismo, Conversiones entre bases, Casteo u Operaciones matematicas.
 
