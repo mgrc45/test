@@ -31,8 +31,6 @@ const double pi = 3.1416;
 
 ```c++
 #include <climits>
-#include <iostream>
-using namespace std;
 
 int main(void)
 {
@@ -273,6 +271,7 @@ int main(void)
  int i,c[] = {5,6,7,8,9,10};
  cout<<"Residuo de m=5 c={5,6,7,8,9,10}\n";
  for(i=0;i<6;i++) cout<<c[i]%5<<" ";
+ //Imprime "0 1 2 3 4 0 "
  cout<<"\n";
  return 0;
 }
