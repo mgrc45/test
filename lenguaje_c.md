@@ -16,7 +16,7 @@ int main(void)
 ```c++
 //Un comentario de una linea
 
-/* Tambien puede realizar
+/* También puede realizar
  comentarios multilinea */
 ```
 
@@ -70,8 +70,6 @@ enum Dias {Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado};
 Locales y globales
 
 ```c++
-#include <iostream>
-
 int global = 5;
 
 int main(void)
@@ -150,7 +148,7 @@ else
   cout<<"B es mayor que A\n";
 ```
 
-Condicion ternaria
+Condición ternaria
 
 ```c++
 int a=5,b=10;
@@ -164,8 +162,8 @@ int opc,a=10,b=5;
 cout<<"Elija una opcion\n";
 cout<<"1) Suma\n";
 cout<<"2) Resta\n";
-cout<<"3) Multiplicacion\n";
-cout<<"4) Division\n";
+cout<<"3) Multiplicación\n";
+cout<<"4) División\n";
 cout<<"5) Modulo\n";
 cout<<"Otro) Salida\n";
 cin<<opc;
@@ -247,7 +245,7 @@ Solo algunos lenguajes de programación pueden interactuar con los bloques de me
 ```c++
 int a=5;
 cout<<a<<"\n"; //Muestra el valor en memoria
-cout<<&a<<"\n"; //Muestra la direccion en memoria
+cout<<&a<<"\n"; //Muestra la dirección en memoria
 ```
 
 Un puntero es una variable que almacena una dirección en memoria
@@ -256,7 +254,7 @@ Un puntero es una variable que almacena una dirección en memoria
 int a = 5;
 int * aPointer;
 
-aPointer = &a; //Asignamos la direccion de "a"
+aPointer = &a; //Asignamos la dirección de "a"
 *aPointer = 10; //Asignamos un nuevo valor
 
 cout<<a; //Imprime "10"
@@ -283,7 +281,7 @@ cout<<"aRef: "<<aRef<<"\n";
 
 ## Operador Modulo
 
-Con la ayuda de este operador obtenemos el residuo de dos numeros
+Con la ayuda de este operador obtenemos el residuo de dos números
 
 ```c++
 #include<iostream>
