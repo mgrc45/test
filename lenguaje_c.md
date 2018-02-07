@@ -476,9 +476,9 @@ Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
 
 ## Referencias
 
-* [c.conclase.net - Operadores de bits](http://c.conclase.net/curso/?cap=018)
 * [cplusplus.com](http://www.cplusplus.com/reference/) - [stdlib.h](http://www.cplusplus.com/reference/cstdlib/) [string](http://www.cplusplus.com/reference/string/string/length/)
-* Alvaro Tejada Galindo(1997), El arte de programar C++, Peru, SinglePath 
+* [c.conclase.net - Operadores de bits](http://c.conclase.net/curso/?cap=018)
+* Alvaro Tejada Galindo(1997), El arte de programar C++ 
 
 ## Notas
 
