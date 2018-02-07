@@ -1,4 +1,4 @@
-# Guía rápida: Lenguaje C
+# Guía rápida: Lenguaje C++
 
 ## Cuerpo del programa
 
@@ -476,10 +476,10 @@ Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
 
 ## Referencias
 
-* [cplusplus.com - <cstdlib> (stdlib.h) - Conversiones](http://www.cplusplus.com/reference/cstdlib/)
-* [cplusplus.com - <string> - Cadenas](http://www.cplusplus.com/reference/string/string/length/)
 * [c.conclase.net - Operadores de bits](http://c.conclase.net/curso/?cap=018)
-* Ebook Alvaro Tejada Galindo(1997), El arte de programar C++, Peru, SinglePath 
+* [cplusplus.com](http://www.cplusplus.com/reference/) - [stdlib.h](http://www.cplusplus.com/reference/cstdlib/) [string](http://www.cplusplus.com/reference/string/string/length/)
+* Alvaro Tejada Galindo(1997), El arte de programar C++, Peru, SinglePath 
+
 ## Notas
 
 Esta guía fue realizada para aprender rápidamente Lenguaje C++, por lo que no se incluyen temas como son Herencia, Encapsulamiento, Polimorfismo, Conversiones entre bases, casteo u Operaciones matemáticas. Úsese bajo su propio riesgo y nunca en exámenes.
