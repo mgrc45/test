@@ -225,8 +225,8 @@ Solo algunos lenguajes de programación pueden interactuar con los bloques de me
 
 ```c++
 int a=5;
-cout<<a<<"\n";//Muestra el valor en memoria
-cout<<&a<<"\n";//Muestra la direccion en memoria
+cout<<a<<"\n"; //Muestra el valor en memoria
+cout<<&a<<"\n"; //Muestra la direccion en memoria
 ```
 
 Un puntero es una variable que almacena una dirección en memoria
@@ -235,8 +235,8 @@ Un puntero es una variable que almacena una dirección en memoria
 int a = 5;
 int * aPointer;
 
-aPointer = &a;//Asignamos la direccion de "a"
-*aPointer = 10;//Asignamos un nuevo valor
+aPointer = &a; //Asignamos la direccion de "a"
+*aPointer = 10; //Asignamos un nuevo valor
 
 cout<<a; //Imprime "10"
 ```
@@ -258,6 +258,66 @@ aRef = 10;
 
 cout<<"a: "<<a<<"\n";
 cout<<"aRef: "<<aRef<<"\n";
+```
+
+## Operador Modulo
+
+Con la ayuda de este operador obtenemos el residuo de dos numeros
+
+```c++
+#include<iostream>
+using namespace std;
+
+int main(void)
+{
+ int i,c[] = {5,6,7,8,9,10};
+ cout<<"Residuo de m=5 c={5,6,7,8,9,10}\n";
+ for(i=0;i<6;i++) cout<<c[i]%5<<" ";
+ cout<<"\n";
+ return 0;
+}
+```
+
+## Operadores de bits
+
+```c++
+#include<stdio.h>
+using namespace std;
+
+int main(void)
+{
+ int i,j;
+
+ //Desplazamiento a la izq
+ i = 2  ;  // 000010 = 2 (Dec)
+ i = i<<2; // 001000 = 8 (Dec) 
+ printf("4 con desplazamiento de 2 bits izq = %d\n\n",i);
+
+ //Desplazamiento a la der
+ i = 8;    // 001000 = 8 (Dec)
+ i = i>>1; // 000100 = 4 (Dec)
+ printf("8 con desplazamiento de 1 bit der = %d\n\n",i);
+
+ //Operador & (AND)
+ i = 5;   // 0101 = 5 (Dec)
+ j = 3;   // 0011 = 3 (Dec)
+ //i & j  == 0001 = 1 (Dec)
+ printf("5 AND 3 = %d\n\n",i&j);
+
+ //Operador | (OR)
+ i = 5;   // 0101 = 5 (Dec)
+ j = 3;   // 0011 = 3 (Dec)
+ //i | j  == 0111 = 7 (Dec)
+ printf("5 AND 3 = %d\n\n",i|j);
+
+ //Operador ^ (XOR)
+ i = 5;   // 0101 = 5 (Dec)
+ j = 3;   // 0011 = 3 (Dec)
+ //i ^ j  == 0110 = 6 (Dec)
+ printf("5 XOR 3 = %d\n\n",i^j);
+
+ return 0;
+}
 ```
 
 ## Funciones
