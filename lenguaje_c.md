@@ -45,7 +45,7 @@ int main(void)
 Constantes simbólicas
 
 ```c++
-const area = base * altura;
+const int area = base * altura;
 ```
 
 ## Variables
@@ -117,7 +117,6 @@ int main(void)
 
 ```c++
 #include <stdio.h>
-using namespace std;
 
 int main(void)
 {
@@ -327,7 +326,7 @@ int main(void)
  Estudiante Alvaro;
 
  cout<<"Estudiante *pSid = new Estudiante...\n";
- Estudiante *pSid = new Estudiante;
+ Estudiante *pSid = new Estudiante();
 
  cout<<"delete pSid...\n";
  delete pSid;
