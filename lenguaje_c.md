@@ -140,31 +140,6 @@ int main(void)
 }
 ```
 
-## Ciclos
-
-```c++
-for(int cnt=0; cnt<5; cnt++) 
- cout<<cnt<<"\n";
-```
-
-```c++
-int cnt = 0;
-while (cnt < 5)
-{
- cout<<cnt<<"\n";
- cnt++;
-}
-```
-
-```c++
-int cnt = 0;
-do
-{
- cout<<cnt<<"\n";
- cnt++;
-} while (cnt < 5);
-```
-
 ## Decisión
 
 ```c++
@@ -215,6 +190,54 @@ switch(opc)
  default:
   cout<<"Salida";
 }
+```
+
+## Ciclos
+
+```c++
+for(int cnt=0; cnt<5; cnt++) 
+ cout<<cnt<<"\n";
+```
+
+```c++
+int cnt = 0;
+while (cnt < 5)
+{
+ cout<<cnt<<"\n";
+ cnt++;
+}
+```
+
+```c++
+int cnt = 0;
+do
+{
+ cout<<cnt<<"\n";
+ cnt++;
+} while (cnt < 5);
+```
+
+## Arreglos
+
+```c++
+int i;
+int a[] = {0,1,2,3,4};
+int j = sizeof(a)/sizeof(int);
+
+for(i=0; i<j; i++) cout<<a[i]<<" ";
+
+cout<<"\n";
+```
+
+```c++
+char a[] = "Hola mundo!";
+cout<<a<<"\n";
+
+int i;
+string b = "Hello World!";
+int j = sizeof(b)/sizeof(char);
+for(i=0; i<j; i++) cout<<b[i]<<" ";
+cout<<"\n";
 ```
 
 ## Apuntadores
