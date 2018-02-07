@@ -241,7 +241,49 @@ cout<<"\n";
 ## Cadenas
 
 ```c++
-string b = "Hello World!";
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(void)
+{
+ string str = "Hola Mundo!";
+
+ //Busqueda
+ size_t found = str.find("Mundo");
+ if (found==string::npos) cout<<"No se encuentra";
+ else cout<<"Encontrado en posicion "<<found; //5
+ cout<<"\n";
+
+ //Longitud
+ //cout<<str.length()<<" bytes\n";
+ cout<<str.size()<<" bytes\n"; //11 bytes
+
+ //Substring
+ cout<<str.substr(0,4)<<"\n"; //Hola
+
+ //Remplazar
+ cout<<str.replace(0,4,"Hey")<<"\n"; //Hey Mundo!
+
+ return 0;
+}
+```
+
+```c++
+#include<iostream> /* cout */
+#include<stdlib.h> /* atoi */
+using namespace std;
+
+int main(void)
+{
+ int i = atoi("5");
+ double j = atof("4.89");
+
+ cout<<"i = "<<i<<" j = "<<j<<"\n";
+ cout<<"i + j = "<<(i+j)<<"\n";
+ 
+ return 0;
+}
 ```
 
 ## Apuntadores
