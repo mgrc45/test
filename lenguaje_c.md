@@ -279,8 +279,8 @@ int main(void)
  int i = atoi("5");
  double j = atof("4.89");
 
- cout<<"i = "<<i<<" j = "<<j<<"\n";
- cout<<"i + j = "<<(i+j)<<"\n";
+ cout<<"i = "<<i<<" j = "<<j<<"\n"; //i = 5 j = 4.89
+ cout<<"i + j = "<<(i+j)<<"\n"; //i + j = 9.89
  
  return 0;
 }
@@ -339,8 +339,7 @@ int main(void)
 {
  int i,c[] = {5,6,7,8,9,10};
  cout<<"Residuo de m=5 c={5,6,7,8,9,10}\n";
- for(i=0;i<6;i++) cout<<c[i]%5<<" ";
- //Imprime "0 1 2 3 4 0 "
+ for(i=0;i<6;i++) cout<<c[i]%5<<" "; //0 1 2 3 4 0 
  cout<<"\n";
  return 0;
 }
@@ -465,7 +464,23 @@ int main(void)
 }
 ```
 
+## Autores
+
+* **Angel González** - [mgrc45](https://github.com/mgrc45)
+
+Vea también la lista de [contribuyentes](CONTRIBUTORS) que participaron en este proyecto.
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia GNU General Public License v2.0. Consulte el archivo [licencia](LICENSE) para obtener más información.
+
+## Referencias
+
+* [cplusplus.com - <cstdlib> (stdlib.h) - Conversiones](http://www.cplusplus.com/reference/cstdlib/)
+* [cplusplus.com - <string> - Cadenas](http://www.cplusplus.com/reference/string/string/length/)
+* [c.conclase.net - Operadores de bits](http://c.conclase.net/curso/?cap=018)
+* Ebook Alvaro Tejada Galindo(1997), El arte de programar C++, Peru, SinglePath 
 ## Notas
 
-Esta guia fue realizada para aprender rapidamente lenguaje c, por lo que no se incluyen temas como son herencia, polimorfismo, Conversiones entre bases, Casteo u Operaciones matematicas.
+Esta guía fue realizada para aprender rápidamente Lenguaje C++, por lo que no se incluyen temas como son Herencia, Encapsulamiento, Polimorfismo, Conversiones entre bases, casteo u Operaciones matemáticas. Úsese bajo su propio riesgo y nunca en exámenes.
 
