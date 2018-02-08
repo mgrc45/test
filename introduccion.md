@@ -22,7 +22,7 @@ El compilador es el encargado de traducir el código fuente pasando por un códi
 Interprete
 Existen lenguajes de programación que no son compilados sino leídos e interpretados directamente desde el código fuente. Por lo que no generan un ejecutable. Esto resta velocidad en cuanto a ejecución, sin embargo es útil para ser ejecutado en diferentes plataformas como es el caso de Python.
 
-Una clasificacion comun para su estudio 
+Una clasificación común para su estudio 
 - **Programación estructurada**: Esta incluye el uso de diseño descendente (top-down), la división de problemas complejos en varios simples y el uso de estructuras básicas (secuenciales, selectivas y repetitivas).
 - **Programación modular**: Consta de varias secciones que interactúan a través de llamadas a procedimientos o funciones. Su mayor ventaja es la reutilización de código y la facilidad para depurar el mismo. Ya que se puede modificar un módulo sin afectar a otros.
 - **Programación orientada a objetos (POO)**: Consiste en la utilización de estructuras de código, las cuales poseen propiedades y atributos; por lo cual reciben el nombre de objetos.
@@ -34,8 +34,8 @@ La algoritmia consiste en la resolución de problemas por métodos no triviales,
 ## Glosario
 
 **Instrucción**: Conjunto de datos insertados en una secuencia estructurada que el procesador interpreta y ejecuta.
-**Programa**: Conjunto de instrucciones, escritas para realizar una tarea especifica.
+**Programa**: Conjunto de instrucciones, escritas para realizar una tarea específica.
 **Lenguaje de programación**: Conjunto de reglas gramaticales que permiten formar un programa.
-**Codigo fuente**: Instrucciones escritas en un lenguaje de programación y por lo tanto legible por un humano.
-**Codigo objeto**: Contiene las instrucciones de alto nivel traducidas al lenguaje de maquina (por lo regular la extencion en .obj).
+**Código fuente**: Instrucciones escritas en un lenguaje de programación y por lo tanto legible por un humano.
+**Código objeto**: Contiene las instrucciones de alto nivel traducidas al lenguaje de maquina (por lo regular la extensión en .obj).
 
