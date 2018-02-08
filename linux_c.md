@@ -103,13 +103,13 @@ x86_64-w64-mingw32-g++ hello.cc -o hello64.exe   # 64-bit
 ```
 
 ### Incluir bibliotecas
-Puede incluir de manera manual alguna librería al momento de realizar una compilación
+Puede incluir de manera manual alguna bibliotecas al momento de realizar una compilación
 
 ```sh
 gcc main.c -o main.exe -I /usr/x86_64-w64-mingw32/include/
 ```
 
-### Fuentes
+### Referencias
 
 * [El compilador GCC](https://iie.fing.edu.uy/~vagonbar/gcc-make/gcc.htm)
 * [Compilador GCC-w64](https://sourceforge.net/projects/mingw-w64/)
