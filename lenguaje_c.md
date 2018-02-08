@@ -482,5 +482,5 @@ Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
 
 ## Notas
 
-Esta guía fue realizada para aprender rápidamente Lenguaje C++, por lo que no se incluyen temas como son Herencia, Encapsulamiento, Polimorfismo, Conversiones entre bases, casteo u Operaciones matemáticas. Úsese bajo su propio riesgo y nunca en exámenes.
+Esta guía fue realizada para aprender rápidamente Lenguaje C++, por lo que no se incluyen temas como son Herencia, Encapsulamiento, Polimorfismo, Conversiones entre bases, Casteo u Operaciones matemáticas. Úsese bajo su propio riesgo y nunca en exámenes.
 
