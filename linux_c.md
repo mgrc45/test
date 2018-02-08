@@ -79,7 +79,7 @@ O para mostrar sólo las rutas puede filtrar con grep y sed
 gcc -m64 -Xlinker --verbose  2>/dev/null | grep SEARCH | sed 's/SEARCH_DIR("=\?\([^"]\+\)"); */\1\n/g'  | grep -vE '^$'
 ```
 
-Sin embargo, existen bibliotecas propietarias como "conio.h" de Borland o que únicamente se encuentran para windows por lo que existen proyectos que tratan de implementar estas librerías dentro de GNU/Linux como son [conio4linux](https://sourceforge.net/projects/conio4linux/) o [ncurses](https://www.gnu.org/software/ncurses/).
+Sin embargo, existen bibliotecas propietarias como "conio.h" de Borland o que únicamente se encuentran para windows por lo que existen proyectos que tratan de implementar estas bibliotecas dentro de GNU/Linux como son [conio4linux](https://sourceforge.net/projects/conio4linux/) o [ncurses](https://www.gnu.org/software/ncurses/).
 
 ```sh
 apt-get install libncurses5-dev libncursesw5-dev
