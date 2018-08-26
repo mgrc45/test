@@ -1,10 +1,6 @@
-
-
-#Como habilitar el archivo de configuracion ".htaccess" (Server Side Includes)
-
 # Introducción
 
-Apache® 2.x tiene mejores medidas de seguridad que las versiones anteriores, debido a que su configuración predeterminada viene de tal modo que deshabilita muchas cosas que podrán considerarse de cierto riesgo. Parte de esa seguridad incluye deshabilitar los SSI (Server Side Includes o Inclusiones del Lado del Servidor) y el uso de los archivos **.htaccess**. Estos últimos sirven para modificar o agregar funciones a directorios.
+Apache® 2.x tiene mejores medidas de seguridad que las versiones anteriores, debido a que su configuración predeterminada viene de tal modo que deshabilita muchas cosas que podrán considerarse de cierto riesgo. Parte de esa seguridad incluye deshabilitar los **SSI** (**S**erver **S**ide **I**ncludes o Inclusiones del Lado del Servidor) y el uso de los archivos **.htaccess**. Estos últimos sirven para modificar o agregar funciones a directorios.
 
 Básicamente solo se necesita agregar las siguientes líneas a cualquier definición del directorio que se desee utilizar:
 
@@ -18,30 +14,32 @@ AllowOverride All
 * http://www.alcancelibre.org/staticpages/index.php/18-como-apache-htaccess
 * http://httpd.apache.org/docs/2.2/howto/ssi.html
 
-
-#------------------------------------------------------------------------------
 # Seguridad: Bloqueo acceso desde diversas IPs o Dominios
-# http://httpd.apache.org/docs/2.2/en/howto/access.html#host
-#------------------------------------------------------------------------------
+
+```shell
 Deny from 216.84.180.24 occ.com.mx
-#------------------------------------------------------------------------------
+```
 
+## Fuentes
 
-#------------------------------------------------------------------------------
+* http://httpd.apache.org/docs/2.2/en/howto/access.html#host
+
 # Personalizacion: Definimos nuestras paginas de error
-# http://httpd.apache.org/docs/2.2/es/custom-error.html
-#------------------------------------------------------------------------------
+
+```shell
 #ErrorDocument 500 "The server made a boo boo."
 #ErrorDocument 404 /missing.html
 #ErrorDocument 404 "/cgi-bin/missing_handler.pl"
 #ErrorDocument 402 http://127.0.0.1/subscription_info.html
-#------------------------------------------------------------------------------
+```
 
+## Fuentes
 
-#------------------------------------------------------------------------------
+* http://httpd.apache.org/docs/2.2/es/custom-error.html
+
 # Seguridad: Evito que se acceda a ciertos archivos
-# http://httpd.apache.org/docs/2.2/en/mod/core.html#filesmatch
-#------------------------------------------------------------------------------
+
+```shell
 # Evito que se pueda acceder directamente a los 
 # archivos que inicien con _ 
 <FilesMatch "^\_(.+)$">
@@ -49,30 +47,27 @@ Deny from 216.84.180.24 occ.com.mx
     Deny from all
     Satisfy All
 </FilesMatch>
-#------------------------------------------------------------------------------
+```
 
+## Fuentes
 
-#------------------------------------------------------------------------------
+* http://httpd.apache.org/docs/2.2/en/mod/core.html#filesmatch
+
 # Personalizacion: Redirijo las paginas
-# http://httpd.apache.org/docs/2.2/en/howto/access.html#rewrite
-# http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex
-#------------------------------------------------------------------------------
-# Simbolos:
-#	^: Señala el inicio del patron.
-#	$: Señala que se termino de escribir un patron.
-#	([A-Z]): Señala que solo acepta un caracter en mayuscula.
-#	([A-Z]+): Señala que acepta varios caracteres mayusculas.
-#	([0-9]+): Señala que acepta varios caracteres numericos.
-#	(.+): Señala que acepta varios tipos de caracteres.
-#	(.*): Señala que acepta varios tipos de caracteres.
-#	[R]: Redirecciona "302 Found"
-#	[R=permanent,L]: Redirecciona "301 Moved Permanently"
-#	no a las direcciones de salida
-# Mas info: RewriteRule Pattern Substitution
-# http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
-# http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html
-# http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule
-#------------------------------------------------------------------------------
+
+Simbolos:
+ ^: Señala el inicio del patron.
+ $: Señala que se termino de escribir un patron.
+ ([A-Z]): Señala que solo acepta un caracter en mayuscula.
+ ([A-Z]+): Señala que acepta varios caracteres mayusculas.
+ ([0-9]+): Señala que acepta varios caracteres numericos.
+ (.+): Señala que acepta varios tipos de caracteres.
+ (.*): Señala que acepta varios tipos de caracteres.
+ [R]: Redirecciona "302 Found"
+ [R=permanent,L]: Redirecciona "301 Moved Permanently"
+ no a las direcciones de salida
+
+```shell
 <IfModule rewrite_module>
  Options +FollowSymLinks
  RewriteEngine On
@@ -98,8 +93,18 @@ Deny from 216.84.180.24 occ.com.mx
  #http://localhost/email/imagenes/001/banner01.jpg
  # RewriteRule ^email/imagenes/([0-9]+)/(.+)$ /email/imagenes.php?id=$1&name=$2 [L] 
 </IfModule>
-#------------------------------------------------------------------------------
+```
 
+## Fuentes
+
+* http://httpd.apache.org/docs/2.2/en/howto/access.html#rewrite
+* http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex
+
+## Mas info: RewriteRule Pattern Substitution
+
+* http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
+* http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html
+* http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule
 
 #------------------------------------------------------------------------------
 # Funcion: Defino la hoja de caracteres predeterminada
