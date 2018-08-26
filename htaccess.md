@@ -9,22 +9,22 @@ Options Includes
 AllowOverride All
 ```
 
-## Fuentes
+### Fuentes
 
 * http://www.alcancelibre.org/staticpages/index.php/18-como-apache-htaccess
 * http://httpd.apache.org/docs/2.2/howto/ssi.html
 
-# Seguridad: Bloqueo acceso desde diversas IPs o Dominios
+## Seguridad: Bloqueo acceso desde diversas IPs o Dominios
 
 ```shell
 Deny from 216.84.180.24 occ.com.mx
 ```
 
-## Fuentes
+### Fuentes
 
 * http://httpd.apache.org/docs/2.2/en/howto/access.html#host
 
-# Personalizacion: Definimos nuestras paginas de error
+## Personalizacion: Definimos nuestras paginas de error
 
 ```shell
 #ErrorDocument 500 "The server made a boo boo."
@@ -33,11 +33,11 @@ Deny from 216.84.180.24 occ.com.mx
 #ErrorDocument 402 http://127.0.0.1/subscription_info.html
 ```
 
-## Fuentes
+### Fuentes
 
 * http://httpd.apache.org/docs/2.2/es/custom-error.html
 
-# Seguridad: Evito que se acceda a ciertos archivos
+## Seguridad: Evito que se acceda a ciertos archivos
 
 ```shell
 # Evito que se pueda acceder directamente a los 
@@ -49,12 +49,13 @@ Deny from 216.84.180.24 occ.com.mx
 </FilesMatch>
 ```
 
-## Fuentes
+### Fuentes
 
 * http://httpd.apache.org/docs/2.2/en/mod/core.html#filesmatch
 
-# Personalizacion: Redirijo las paginas
+## Personalizacion: Redirijo las paginas
 
+~~~
 Simbolos:
  ^: Señala el inicio del patron.
  $: Señala que se termino de escribir un patron.
@@ -66,6 +67,7 @@ Simbolos:
  [R]: Redirecciona "302 Found"
  [R=permanent,L]: Redirecciona "301 Moved Permanently"
  no a las direcciones de salida
+~~~
 
 ```shell
 <IfModule rewrite_module>
@@ -95,24 +97,24 @@ Simbolos:
 </IfModule>
 ```
 
-## Fuentes
+### Fuentes
 
 * http://httpd.apache.org/docs/2.2/en/howto/access.html#rewrite
 * http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex
 
-## Mas info: RewriteRule Pattern Substitution
+### Mas info: RewriteRule Pattern Substitution
 
 * http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
 * http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html
 * http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule
 
-#------------------------------------------------------------------------------
-# Funcion: Defino la hoja de caracteres predeterminada
-#------------------------------------------------------------------------------
+## Funcion: Defino la hoja de caracteres predeterminada
+
+```shell
 AddDefaultCharset on
 AddDefaultCharset utf-8
 #AddDefaultCharset ISO-8859-1
-#------------------------------------------------------------------------------
+```
 
 
 <IfModule mod_php5.c>
