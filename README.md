@@ -2,8 +2,9 @@
 
 ## Motor de la base de datos
 
+| Version | Descripcion |
 | --- | --- |
-| MySQL Community Server | Version gratuita para un solo servidor |
+| **MySQL Community Server** | Version gratuita para un solo servidor (Recomendada) |
 | MySQL Cluster | Version para grupos de servidores |
 | MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
 | MySQL Connectors | Conectores para diferentes lenguajes de programacion |
