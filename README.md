@@ -2,18 +2,23 @@
 
 ## Motor de la base de datos
 
-| Version | Descripcion |
-| --- | --- |
-| **MySQL Community Server** | Version gratuita para un solo servidor (recomendada) |
-| MySQL Cluster | Version para grupos de servidores |
-| MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
-| MySQL Connectors | Conectores para diferentes lenguajes de programacion |
-
-Ubicacion de link de descarga
+Ruta del link de descarga
 
 1. [MySQL Downloads](https://www.mysql.com/downloads/)
 2. [MySQL Product Archives](https://downloads.mysql.com/archives/)
 3. [MySQL Installer (Archived Versions)](https://downloads.mysql.com/archives/installer/)
+4. [mysql-installer-community-5.7.23.0.msi](https://dev.mysql.com/downloads/windows/installer/5.7.html)
+* [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
+
+Explicacion de las versiones
+
+| Version | Descripcion |
+| --- | --- |
+| MySQL Community Server | Version gratuita para un solo servidor |
+| MySQL Cluster | Version para grupos de servidores |
+| MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
+| MySQL Connectors | Conectores para diferentes lenguajes de programacion |
+| MySQL Enterprise Firewall | Permite filtrar las consultas maliciosas |
 
 Explicacion de los empaquetados
 
@@ -26,8 +31,8 @@ Explicacion de los empaquetados
   <td>Unicamente motor de la base de datos para sistemas de 64 bits, sin instalador</td>
  </tr>
  <tr>
-  <th><a href="http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi">mysql-5.7.23-win64.msi</a></th>
-  <th>Unicamente motor de la base de datos para sistemas de 64 bits (recomendada)</th>
+  <td><a href="http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi">mysql-5.7.23-win64.msi</a></td>
+  <td>Unicamente motor de la base de datos para sistemas de 64 bits</td>
  </tr>
  <tr>
   <td>mysql-essential-5.5.2-m2-win32.msi</td>
