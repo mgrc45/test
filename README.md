@@ -8,7 +8,8 @@ Ruta del link de descarga
 2. [MySQL Product Archives](https://downloads.mysql.com/archives/)
 3. [MySQL Installer (Archived Versions)](https://downloads.mysql.com/archives/installer/)
 4. [mysql-installer-community-5.7.23.0.msi](https://dev.mysql.com/downloads/windows/installer/5.7.html)
-* [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
+
+> [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
 
 Explicacion de las versiones
 
@@ -37,12 +38,12 @@ Explicacion de los empaquetados
  <tr>
   <td>mysql-essential-5.5.2-m2-win32.msi</td>
   <td><strong>essential</strong>, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos. 
-  <strong>m2</strong> indica que esta version se encuentra en desarrollo (developer releases).</td>
+  <strong>m2</strong> indica que esta version se encuentra en desarrollo.</td>
  </tr>
  <tr>
   <td><a href="https://dev.mysql.com/downloads/windows/installer/5.7.html">mysql-installer-community-5.7.23.0.msi</a></td>
   <td><strong>installer-community</strong>, este paquete incluye: Instalador de windows (MSI), Herramienta de configuracion (configuration wizard), 
-  Conectores, Monitores, Proxy, Workbench... </td>
+  Conectores, Monitores, Proxy, Workbench ...</td>
  </tr>
 </table>
 
