@@ -38,9 +38,6 @@ Explicacion de los empaquetados
 </td>
 </tr>
 
-| Nombre | Descripcion |
-| --- | --- |
-
 **Glosario**
 
 | Generally Available (GA) | Versiones liberadas para produccion |
