@@ -4,16 +4,10 @@
 
 | Version | Descripcion |
 | --- | --- |
-| **MySQL Community Server** | Version gratuita para un solo servidor (Recomendada) |
+| **MySQL Community Server** | Version gratuita para un solo servidor (recomendada) |
 | MySQL Cluster | Version para grupos de servidores |
 | MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
 | MySQL Connectors | Conectores para diferentes lenguajes de programacion |
-
-MySQL Database Server (Recomendado):
- Unicamente la base de datos.
-
-MySQL Installer:
- Versiones completas con todos los aditamentos
 
 Ubicacion de link de descarga
 
@@ -22,11 +16,30 @@ Ubicacion de link de descarga
 
 Explicacion de los empaquetados
 
+<table>
+<tr>
+<th> Nombre </th><th> Descripcion </th>
+</tr>
+<tr>
+ <td>mysql-5.5.34-win32.msi</td>
+ <td>Unicamente motor de la base de datos para sistemas de 32 bits</td>
+</tr>
+<tr>
+ <td>mysql-essential-5.5.2-m2-win32.msi</td>
+ <td>Si dice "essential" unicamente trae la base de datos.<br>
+ Si dice "m2" es que esta en desarrollo esa version (Developer releases).</td>
+</tr>
+<tr>
+ <td>mysql-installer-community-5.6.14.0.msi</td>
+ <td>Si dice "installer-community" trae:<br>
+ Instalador de windows (MSI)<br>
+ Herramienta de configuracion (Configuration wizard)<br>
+ Conectores, Monitores, Proxy, Workbench... </td>
+</td>
+</tr>
+
 | Nombre | Descripcion |
 | --- | --- |
-| mysql-5.5.34-win32.msi | El puro motor de la base de datos para sistemas de 32 bits |
-| mysql-essential-5.5.2-m2-win32.msi | Si dice "essential" unicamente trae la base de datos.<br> Si dice "m2" es que esta en desarrollo esa version (Developer releases). |
-| mysql-installer-community-5.6.14.0.msi | Si dice "installer-community" trae:<br> Instalador de windows (MSI) <br>Herramienta de configuracion (Configuration wizard)<br>Conectores, Monitores, Proxy, Workbench... |
 
 **Glosario**
 
@@ -34,12 +47,9 @@ Explicacion de los empaquetados
 | --- | --- |
 | Developer Releases | Versiones en desarrollo |
 
-
 **Link de descarga**
 * http://dev.mysql.com/downloads/mysql/
 
 **Versiones anteriores**
 * http://downloads.mysql.com/archives.php
-
-
 
