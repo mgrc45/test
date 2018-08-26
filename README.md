@@ -9,31 +9,41 @@
 | MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
 | MySQL Connectors | Conectores para diferentes lenguajes de programacion |
 
+
+
 Ubicacion de link de descarga
 
-1. [MySQL on Windows](https://dev.mysql.com/downloads/windows/)
-2. [MySQL Installer](https://dev.mysql.com/downloads/installer/m/downloads/installer/)
+1. [MySQL Downloads](https://www.mysql.com/downloads/)
+2. [MySQL Community Downloads](https://dev.mysql.com/downloads/)
+3. [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+4. Looking for the latest GA version?
+5. [Windows (x86, 32-bit), MSI Installer](https://dev.mysql.com/downloads/windows/installer/5.7.html)
 
 Explicacion de los empaquetados
 
 <table>
  <tr>
-  <th> Nombre </th><th> Descripcion </th>
+  <th>Nombre</th><th>Descripcion</th>
  </tr>
  <tr>
-  <td>mysql-5.5.34-win32.msi</td>
-  <td>Unicamente motor de la base de datos para sistemas de 32 bits</td>
+  <td>
+<a href="">mysql-5.7.23-win64.zip</a>
+</td>
+  <td>Unicamente motor de la base de datos para sistemas de 64 bits, sin instalador</td>
+ </tr>
+ <tr>
+  <th>**mysql-5.7.23-win64.msi**</th>
+  <td>Unicamente motor de la base de datos para sistemas de 64 bits (recomendada)</td>
  </tr>
  <tr>
   <td>mysql-essential-5.5.2-m2-win32.msi</td>
-  <td>Si dice "essential" unicamente trae la base de datos.<br>
-  Si dice "m2" es que esta en desarrollo esa version (Developer releases).</td>
+  <td>**essential**, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos.<br>
+  **m2** indica que esta version se encuentra en desarrollo (developer releases).</td>
  </tr>
  <tr>
-  <td>mysql-installer-community-5.6.14.0.msi</td>
-  <td>Si dice "installer-community" trae:<br>
-  Instalador de windows (MSI)<br>
-  Herramienta de configuracion (Configuration wizard)<br>
+  <td><a href="https://dev.mysql.com/downloads/windows/installer/">mysql-installer-community-8.0.12.0.msi</a>
+  </td>
+  <td>**installer-community**, este paquete incluye: Instalador de windows (MSI), Herramienta de configuracion (configuration wizard), 
   Conectores, Monitores, Proxy, Workbench... </td>
   </td>
  </tr>
