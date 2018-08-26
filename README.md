@@ -9,6 +9,8 @@ Ruta del link de descarga
 3. [MySQL Installer (Archived Versions)](https://downloads.mysql.com/archives/installer/)
 4. [mysql-installer-community-5.7.23.0.msi](https://dev.mysql.com/downloads/windows/installer/5.7.html)
 
+Unicamente motor de base de datos con instalador para windows
+
 > [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
 
 Explicacion de las versiones
