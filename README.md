@@ -26,26 +26,22 @@ Explicacion de los empaquetados
   <th>Nombre</th><th>Descripcion</th>
  </tr>
  <tr>
-  <td>
-<a href="">mysql-5.7.23-win64.zip</a>
-</td>
+  <td><a href="https://dev.mysql.com/downloads/mysql/5.7.html">mysql-5.7.23-win64.zip</a></td>
   <td>Unicamente motor de la base de datos para sistemas de 64 bits, sin instalador</td>
  </tr>
  <tr>
-  <th>**mysql-5.7.23-win64.msi**</th>
+  <th>mysql-5.7.23-win64.msi</th>
   <td>Unicamente motor de la base de datos para sistemas de 64 bits (recomendada)</td>
  </tr>
  <tr>
   <td>mysql-essential-5.5.2-m2-win32.msi</td>
-  <td>**essential**, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos.<br>
-  **m2** indica que esta version se encuentra en desarrollo (developer releases).</td>
+  <td><strong>essential</strong>, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos.<br>
+  <strong>m2</strong> indica que esta version se encuentra en desarrollo (developer releases).</td>
  </tr>
  <tr>
-  <td><a href="https://dev.mysql.com/downloads/windows/installer/">mysql-installer-community-8.0.12.0.msi</a>
-  </td>
-  <td>**installer-community**, este paquete incluye: Instalador de windows (MSI), Herramienta de configuracion (configuration wizard), 
+  <td><a href="https://dev.mysql.com/downloads/windows/installer/5.7.html">mysql-installer-community-5.7.23.0.msi</a></td>
+  <td><strong>installer-community</strong>, este paquete incluye: Instalador de windows (MSI), Herramienta de configuracion (configuration wizard), 
   Conectores, Monitores, Proxy, Workbench... </td>
-  </td>
  </tr>
 </table>
 
@@ -60,4 +56,5 @@ Explicacion de los empaquetados
 
 **Versiones anteriores**
 * http://downloads.mysql.com/archives.php
+* https://downloads.mysql.com/archives/installer/
 
