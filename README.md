@@ -9,15 +9,11 @@
 | MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
 | MySQL Connectors | Conectores para diferentes lenguajes de programacion |
 
-
-
 Ubicacion de link de descarga
 
 1. [MySQL Downloads](https://www.mysql.com/downloads/)
-2. [MySQL Community Downloads](https://dev.mysql.com/downloads/)
-3. [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-4. Looking for the latest GA version?
-5. [Windows (x86, 32-bit), MSI Installer](https://dev.mysql.com/downloads/windows/installer/5.7.html)
+2. [MySQL Product Archives](https://downloads.mysql.com/archives/)
+3. [MySQL Installer (Archived Versions)](https://downloads.mysql.com/archives/installer/)
 
 Explicacion de los empaquetados
 
@@ -30,12 +26,12 @@ Explicacion de los empaquetados
   <td>Unicamente motor de la base de datos para sistemas de 64 bits, sin instalador</td>
  </tr>
  <tr>
-  <th>mysql-5.7.23-win64.msi</th>
-  <td>Unicamente motor de la base de datos para sistemas de 64 bits (recomendada)</td>
+  <th><a href="http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi">mysql-5.7.23-win64.msi</a></th>
+  <th>Unicamente motor de la base de datos para sistemas de 64 bits (recomendada)</th>
  </tr>
  <tr>
   <td>mysql-essential-5.5.2-m2-win32.msi</td>
-  <td><strong>essential</strong>, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos.<br>
+  <td><strong>essential</strong>, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos. 
   <strong>m2</strong> indica que esta version se encuentra en desarrollo (developer releases).</td>
  </tr>
  <tr>
@@ -52,9 +48,10 @@ Explicacion de los empaquetados
 | Developer Releases | Versiones en desarrollo |
 
 **Link de descarga**
-* http://dev.mysql.com/downloads/mysql/
+* https://dev.mysql.com/downloads/mysql/
 
 **Versiones anteriores**
-* http://downloads.mysql.com/archives.php
+* https://downloads.mysql.com/archives.php
 * https://downloads.mysql.com/archives/installer/
+* http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/
 
