@@ -17,26 +17,27 @@ Ubicacion de link de descarga
 Explicacion de los empaquetados
 
 <table>
-<tr>
-<th> Nombre </th><th> Descripcion </th>
-</tr>
-<tr>
- <td>mysql-5.5.34-win32.msi</td>
- <td>Unicamente motor de la base de datos para sistemas de 32 bits</td>
-</tr>
-<tr>
- <td>mysql-essential-5.5.2-m2-win32.msi</td>
- <td>Si dice "essential" unicamente trae la base de datos.<br>
- Si dice "m2" es que esta en desarrollo esa version (Developer releases).</td>
-</tr>
-<tr>
- <td>mysql-installer-community-5.6.14.0.msi</td>
- <td>Si dice "installer-community" trae:<br>
- Instalador de windows (MSI)<br>
- Herramienta de configuracion (Configuration wizard)<br>
- Conectores, Monitores, Proxy, Workbench... </td>
-</td>
-</tr>
+ <tr>
+  <th> Nombre </th><th> Descripcion </th>
+ </tr>
+ <tr>
+  <td>mysql-5.5.34-win32.msi</td>
+  <td>Unicamente motor de la base de datos para sistemas de 32 bits</td>
+ </tr>
+ <tr>
+  <td>mysql-essential-5.5.2-m2-win32.msi</td>
+  <td>Si dice "essential" unicamente trae la base de datos.<br>
+  Si dice "m2" es que esta en desarrollo esa version (Developer releases).</td>
+ </tr>
+ <tr>
+  <td>mysql-installer-community-5.6.14.0.msi</td>
+  <td>Si dice "installer-community" trae:<br>
+  Instalador de windows (MSI)<br>
+  Herramienta de configuracion (Configuration wizard)<br>
+  Conectores, Monitores, Proxy, Workbench... </td>
+  </td>
+ </tr>
+</table>
 
 **Glosario**
 
