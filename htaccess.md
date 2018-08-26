@@ -116,35 +116,24 @@ AddDefaultCharset utf-8
 #AddDefaultCharset ISO-8859-1
 ```
 
+## Modulos PHP 5
 
+```shell
 <IfModule mod_php5.c>
-#------------------------------------------------------------------------------
-# Funcion(PHP): Deshabilita el uso de variables globales
-#------------------------------------------------------------------------------
+# Deshabilita el uso de variables globales
 php_flag register_globals Off
-#------------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------
-# Funcion(PHP): Habilita la compresion gzip
-#------------------------------------------------------------------------------
+# Habilita la compresion gzip
 php_flag zlib.output_compression on
 php_value zlib.output_compression_level 9
-#------------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------
-# Funcion(PHP): Tamaño maximo del archivo
-#------------------------------------------------------------------------------
+# Tamaño maximo del archivo
 php_value upload_max_filesize 8M
-#------------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------
-# Funcion(PHP): Magic Quotes
-#------------------------------------------------------------------------------
-# ' (comilla-simple), " (comilla doble), \ (diagonal) y caracteres "NULL"
-# todos son escapados con una diagonal. Es equivalente a usar "addslashes()"
-#------------------------------------------------------------------------------
+# Magic Quotes
 php_flag magic_quotes_gpc Off
 php_flag magic_quotes_runtime Off
 #php_admin_flag magic_quotes_sybase = Off
-#------------------------------------------------------------------------------
 </IfModule>
+```
+
