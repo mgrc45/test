@@ -1,6 +1,22 @@
+
+
 #Como habilitar el archivo de configuracion ".htaccess" (Server Side Includes)
-# http://www.alcancelibre.org/staticpages/index.php/18-como-apache-htaccess
-# http://httpd.apache.org/docs/2.2/howto/ssi.html
+
+# Introducción
+
+Apache® 2.x tiene mejores medidas de seguridad que las versiones anteriores, debido a que su configuración predeterminada viene de tal modo que deshabilita muchas cosas que podrán considerarse de cierto riesgo. Parte de esa seguridad incluye deshabilitar los SSI (Server Side Includes o Inclusiones del Lado del Servidor) y el uso de los archivos **.htaccess**. Estos últimos sirven para modificar o agregar funciones a directorios.
+
+Básicamente solo se necesita agregar las siguientes líneas a cualquier definición del directorio que se desee utilizar:
+
+```shell
+Options Includes
+AllowOverride All
+```
+
+## Fuentes
+
+* http://www.alcancelibre.org/staticpages/index.php/18-como-apache-htaccess
+* http://httpd.apache.org/docs/2.2/howto/ssi.html
 
 
 #------------------------------------------------------------------------------
