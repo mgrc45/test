@@ -6,7 +6,7 @@ MySQL es una de las bases de datos mas utilizadas por las diferentes aplicacione
 
 ![Licence Agreement](1.png)
 
-Tras aceptar el acuerdo de licencia General Public License v2, tenemos 3 tipos de instalación típica, completa y personalizada. Esta última permite seleccionar el directorio de destino sin embargo, recomiendo instalar la versión **completa** ya que integra todos los componentes incluyendo ejemplos, scripts y librerías de desarrollo.
+Tras aceptar el acuerdo de licencia General Public License v2, tenemos 3 tipos de instalación típica, completa y personalizada. Recomiendo instalar la versión **completa** ya que integra todos los componentes incluyendo ejemplos, scripts y librerías de desarrollo.
 
 ![Setup Type](2.png)
 
