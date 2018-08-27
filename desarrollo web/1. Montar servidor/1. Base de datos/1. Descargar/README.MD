@@ -1,6 +1,4 @@
-# Instalacion de la base de datos (MySQL)
-
-## Descargar el motor de la base de datos
+## Descargar el motor de la base de datos (MySQL)
 
 Ruta del link de descarga
 
