@@ -1,25 +1,32 @@
 ## Instalación de MySQL en Windows XP
 
-por [Jorge Oyhenard](http://www.jorgeoyhenard.com/author/elQuique/) en [desarrollo aplicaciones](http://www.jorgeoyhenard.com/articulos/desarrollo-aplicaciones/), [desarrollo web](http://www.jorgeoyhenard.com/articulos/desarollo-web/)<br>
-16 de April de 2010 05:30 am
-
 ![Setup Wizard](0.png)
 
-Ahora toca el turno de Instalar la base de datos **MySQL**, que es una de las más utilizadas por las diferentes aplicaciones webs desarrolladas en PHP, por ejemplo **WordPress**, **phpBB**, **vBulletin**, **Joomla**, **Drupal**, entre otras tantas.
+MySQL, es una de las bases de datos mas utilizadas por las diferentes aplicaciones desarrolladas en **PHP** como **WordPress**, **phpBB**, **vBulletin**, **Joomla**, **Drupal**, entre otras.
 
 ![Licence Agreement](1.png)
 
-Tenemos tres tipos de instalación, típica, completa y **personalizada**, típica y completa son muy sencillas basta con seleccionar siguiente, siguiente, siguiente…., pero haremos la instalación personalizada para puntualizar ciertos aspectos interesantes de la instalación de MySQL.
+Tras aceptar el acuerdo de licencia General Public License v2, tenemos 3 tipos de instalación típica, completa y personalizada. Esta ultima permite seleccionar el directorio de destino sin embargo, recomiendo instalar la version **completa** ya que integra todos los componentes incluyendo ejemplos, scripts y librerías de desarrollo.
 
 ![Setup Type](2.png)
 
-Luego de seleccionar **Custom (personalizada)**, nos pide indicar que elementos instalaremos, por defecto instalará todo menos los **“Developers Components“**, son opcionales, contienen ejemplos, scripts y algunas librerías para los más curiosos.
-
-La carpeta de instalación por defecto es  <strong>C:\Archivos de Programa\MySQL\MySQL Server 5.5\</strong>, podemos cambiarla con el botón Change, y debes recordarla para más adelante. Presionamos siguiente e instalar para que comience a realizar la instalación de MySQL.
+La carpeta de instalación por defecto es  <strong>C:\Archivos de Programa\MySQL\MySQL Server 5.5\</strong> y bastara con presionar siguiente e instalar.
 
 ![Install MySQL Server](3.0.png)
 
-Al finalizar la instalación nos presenta la versión Entreprise que es de pago y lo hace a modo de publicidad, presionamos siguiente para continuar.
+Al finalizar la instalación nos presenta la versión Entreprise que es de pago a modo de publicidad y presionamos siguiente para continuar.
 
 ![Completed Wizard](4.png)
+
+Con esto concluimos la instalacion de MySQL Server, sin embargo aun no esta configurada.
+
+## Autores
+
+* **Angel González** - [mgrc45](https://github.com/mgrc45)
+* [Jorge Oyhenard](http://www.jorgeoyhenard.com/author/elQuique/)
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia GNU General Public License v2.0. Consulte el archivo [licencia](LICENSE) para obtener más información.
+
 

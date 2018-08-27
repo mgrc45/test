@@ -11,21 +11,21 @@ Unicamente motor de base de datos con instalador para windows
 
 > [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
 
-Explicacion de las versiones
+Explicación de las versiones
 
-| Version | Descripcion |
+| Versión | Descripción |
 | --- | --- |
-| MySQL Community Server | Version gratuita para un solo servidor |
-| MySQL Cluster | Version para grupos de servidores |
-| MySQL Workbench | Herramienta de administracion, monitoreo y modelado de la base de datos |
-| MySQL Connectors | Conectores para diferentes lenguajes de programacion |
+| MySQL Community Server | Versión gratuita para un solo servidor |
+| MySQL Cluster | Versión para grupos de servidores |
+| MySQL Workbench | Herramienta de administración, monitoreo y modelado de la base de datos |
+| MySQL Connectors | Conectores para diferentes lenguajes de programación |
 | MySQL Enterprise Firewall | Permite filtrar las consultas maliciosas |
 
-Explicacion de los empaquetados
+Explicación de los empaquetados
 
 <table>
  <tr>
-  <th>Nombre</th><th>Descripcion</th>
+  <th>Nombre</th><th>Descripción</th>
  </tr>
  <tr>
   <td><a href="https://dev.mysql.com/downloads/mysql/5.7.html">mysql-5.7.23-win64.zip</a></td>
@@ -38,18 +38,18 @@ Explicacion de los empaquetados
  <tr>
   <td>mysql-essential-5.5.2-m2-win32.msi</td>
   <td><strong>essential</strong>, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos. 
-  <strong>m2</strong> indica que esta version se encuentra en desarrollo.</td>
+  <strong>m2</strong> indica que esta versión se encuentra en desarrollo.</td>
  </tr>
  <tr>
   <td><a href="https://dev.mysql.com/downloads/windows/installer/5.7.html">mysql-installer-community-5.7.23.0.msi</a></td>
-  <td><strong>installer-community</strong>, este paquete incluye: Instalador de windows (MSI), Herramienta de configuracion (configuration wizard), 
+  <td><strong>installer-community</strong>, este paquete incluye: Instalador de windows (MSI), Herramienta de configuración (configuration wizard), 
   Conectores, Monitores, Proxy, Workbench ...</td>
  </tr>
 </table>
 
 Explicacion de las liberaciones
 
-| Generally Available (GA) | Versiones liberadas para produccion |
+| Generally Available (GA) | Versiones liberadas para producción |
 | --- | --- |
 | Developer Releases | Versiones en desarrollo |
 
