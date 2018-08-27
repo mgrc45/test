@@ -1,6 +1,6 @@
 # Instalacion de la base de datos (MySQL)
 
-## Motor de la base de datos
+## Descargar el motor de la base de datos
 
 Ruta del link de descarga
 
@@ -49,7 +49,7 @@ Explicacion de los empaquetados
  </tr>
 </table>
 
-**Glosario**
+Explicacion de las liberaciones
 
 | Generally Available (GA) | Versiones liberadas para produccion |
 | --- | --- |
