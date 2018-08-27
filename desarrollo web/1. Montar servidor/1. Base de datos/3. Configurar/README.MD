@@ -40,7 +40,7 @@ Optimo para aplicaciones web sencillas, de control o programas de análisis. Sol
 
 En nuestro caso seleccionaremos Multifunctional Database.
 
-![InnoDB datafile](04.png)
+![InnoDB datafile](04.jpg)
 
 La siguiente selección es la carpeta donde se almacenaran los datos, por defecto podemos usar una subcarpeta que se creará en el lugar de la instalación de MySQL, y continuamos con siguiente.
 
@@ -66,7 +66,7 @@ Debemos indicar ahora que MySQL Server se ejecutar como un Servicio Windows (Ins
 indicar un nombre de servicio, que dejaremos como MySQL, y marcaremos también la opción de incluir los archivos de ejecución de MySQL en el PATH de Windows (Include Bin Directory in Windows PATH) y continuamos con siguiente.
 En este punto debemos prestar mucha atención
 
-![Set password](09.png)
+![Set password](09 - root password.png)
 
 ya que es donde definimos el password del administrador principal del Servidor MySQL, o sea el usuario root. También podemos indicar si queremos que nuestras bases de datos se accedan desde maquinas remotas con el usuario root, y continuamos con siguiente.
 
