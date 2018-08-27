@@ -6,11 +6,11 @@ MySQL, es una de las bases de datos mas utilizadas por las diferentes aplicacion
 
 ![Licence Agreement](1.png)
 
-Tras aceptar el acuerdo de licencia General Public License v2, tenemos 3 tipos de instalación típica, completa y personalizada. Esta ultima permite seleccionar el directorio de destino sin embargo, recomiendo instalar la version **completa** ya que integra todos los componentes incluyendo ejemplos, scripts y librerías de desarrollo.
+Tras aceptar el acuerdo de licencia General Public License v2, tenemos 3 tipos de instalación típica, completa y personalizada. Esta última permite seleccionar el directorio de destino sin embargo, recomiendo instalar la versión **completa** ya que integra todos los componentes incluyendo ejemplos, scripts y librerías de desarrollo.
 
 ![Setup Type](2.png)
 
-La carpeta de instalación por defecto es  <strong>C:\Archivos de Programa\MySQL\MySQL Server 5.5\</strong> y bastara con presionar siguiente e instalar.
+La carpeta de instalación por defecto es <strong>C:\Archivos de Programa\MySQL\MySQL Server 5.5\</strong> y bastara con presionar siguiente e instalar.
 
 ![Install MySQL Server](3.0.png)
 
@@ -18,15 +18,13 @@ Al finalizar la instalación nos presenta la versión Entreprise que es de pago 
 
 ![Completed Wizard](4.png)
 
-Con esto concluimos la instalacion de MySQL Server, sin embargo aun no esta configurada.
+Con esto concluimos la instalación de MySQL Server, sin embargo, aún no está configurada.
 
 ## Autores
 
-* **Angel González** - [mgrc45](https://github.com/mgrc45)
+* [Angel González](https://github.com/mgrc45)
 * [Jorge Oyhenard](http://www.jorgeoyhenard.com/author/elQuique/)
 
 ## Licencia
 
-Este proyecto está licenciado bajo la licencia GNU General Public License v2.0. Consulte el archivo [licencia](LICENSE) para obtener más información.
-
-
+Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
