@@ -10,7 +10,7 @@ Tras aceptar el acuerdo de licencia General Public License v2, tenemos 3 tipos d
 
 ![Setup Type](2.png)
 
-La carpeta de instalación por defecto es <strong>C:\Archivos de Programa\MySQL\MySQL Server 5.5\\\</strong> y bastara con presionar siguiente e instalar.
+La carpeta de instalación por defecto es **[C:\Archivos de Programa\MySQL\MySQL Server 5.5\]** y bastara con presionar siguiente e instalar.
 
 ![Install MySQL Server](3.0.png)
 
