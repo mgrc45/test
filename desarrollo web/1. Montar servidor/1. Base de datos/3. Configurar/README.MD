@@ -77,15 +77,28 @@ hemos culminado con estos los pasos, presionamos Execute para que se termine de 
 En el menú inicio podemos ejecutar nuevamente el Asistente de Configuración de Instancias MySQL (MySQL Server Instance Config Wizard) en caso que sea necesario.
 
 Ahora ya podemos utilizar MySQL desde nuestras aplicaciones PHP, .NET, y otras.
+
 Error 1045 o problemas con Firewall al final de la instalación
+
 Actualización 08/12/2010
+
 En los comentarios de este blogs y algunos foros suelen comentarme sobre un error al final de la instalación o específicamente el error 1045. Al parecer la solución es sencilla pero es un poco difícil de darse cuenta.
+
 Para como error nos confunde con un mensaje nos lleva a verificar el Firewall, y como sucede cuando vamos a configurar la instancia y nos pregunta el puerto y usuario para MySQL, salimos corriendo a ver el Firewall.
+
 Afortunadamente el error me sucedió ayer por primera vez, luego de cientos de veces de instalar MySQL sin problemas, pero gracias a ese errror ahora tengo para contarles.
+
 El error sucede cuando ya teniamos una instancia o datos en la carpeta de MySQL, ya sea por una instalación anterior o bien la actual que fallo por X causa, lo más sencillo si no tenemos datos o ninguna base de datos, es eliminar la carpeta DATA y luego configurar la instancia desde cero, con eso listo solucionado el problema.
 Solución para curiosos:
+
 Si tienes tiempo y ganas, como fue mi caso y quieres reproducir el problema solo para ver cual era el fallo, veamos la solución larga: Al intentar instalar sobre una Instancia previa o una carpeta con datos existente se puede producir este fallo aun cuando brindamos el password root anterior.
-Incluso la forma de saber si fallará es: a) cuando es una instalación limpia, el wizard solicita password y confirmación, b) si es una instalación sobre una instancia existente, solicita password anterior, nuevo password y confirmación. En el caso B es cuando se produce el error.
+Incluso la forma de saber si fallará es: 
+
+a) cuando es una instalación limpia, el wizard solicita password y confirmación, 
+b) si es una instalación sobre una instancia existente, solicita password anterior, nuevo password y confirmación. 
+
+En el caso B es cuando se produce el error.
+
 El problema es que aun conociendo el password anterior seguirá dando el error 1045 y ahí justo está lo que nos hace perder tiempo, ya que carece de sentido.
 
 La solución en este caso es eliminar la tabla de permisos antigua, re-asignar un password y realizar la configuración de instancia nuevamente. Vamos paso a paso:
