@@ -102,6 +102,7 @@ En el caso B es cuando se produce el error.
 El problema es que aun conociendo el password anterior seguirá dando el error 1045 y ahí justo está lo que nos hace perder tiempo, ya que carece de sentido.
 
 La solución en este caso es eliminar la tabla de permisos antigua, re-asignar un password y realizar la configuración de instancia nuevamente. Vamos paso a paso:
+
 * Cuando da el error 1045, vamos a presionar SKIP y salir del Wizar de Configuración de Instancias
 * Abrimos MySQL desde la línea de comandos:  mysql -u root -p  (Enter), nos pide password e ingresamos el anterior
 * En el prompt de MySQL, abrimos la base MySQL:   mysql> use mysql
