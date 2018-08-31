@@ -1,0 +1,32 @@
+## Ajustes de desempeño
+
+**Query cache size**
+
+El valor minimo del cache es de 40 KB (40000), al definir un nuevo valor se asigna el bloque mas cercano a 1024 bytes.
+
+~~~
+SHOW GLOBAL VARIABLES LIKE 'query_cache_size';
+~~~
+
+El valor predeterminado es de 1048576, sin embargo recomiendo un valor superior
+
+~~~
+SET GLOBAL query_cache_size = 32 000 000;
+~~~
+
+https://dev.mysql.com/doc/refman/5.5/en/query-cache-configuration.html
+
+
+## Referencias
+
+* https://dev.mysql.com/doc/refman/5.7/en/server-options.html
+* https://dev.mysql.com/doc/refman/5.7/en/data-directory-initialization-mysqld.html
+* https://dev.mysql.com/doc/refman/5.7/en/multiple-windows-services.html
+
+## Autores
+
+* [Angel González](https://github.com/mgrc45)
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
