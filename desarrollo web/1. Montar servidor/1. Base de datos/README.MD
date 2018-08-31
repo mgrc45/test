@@ -57,7 +57,5 @@ Explicacion de las liberaciones
 * https://dev.mysql.com/downloads/mysql/
 
 **Versiones anteriores**
-* https://downloads.mysql.com/archives.php
 * https://downloads.mysql.com/archives/installer/
 * http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/
-
