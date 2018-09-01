@@ -33,6 +33,8 @@ Durante el proceso de instalacion el software nos abrira varias ventanas de cons
 
 ![Completed Wizard](imagenes/7.png)
 
+Con esto concluye la instalacion del servidor web apache en windows, sin embargo recomiendo ampliamente configurarlo por motivos seguridad
+
 **Referencias**
 * http://httpd.apache.org/download.cgi
 * http://archive.apache.org/dist/httpd/binaries/win32/
