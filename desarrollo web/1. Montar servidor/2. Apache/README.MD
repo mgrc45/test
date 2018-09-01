@@ -26,14 +26,13 @@ La carpeta de instalación por defecto es **C:\Program Files (x86)\Apache Softwa
 
 ![Destination folder](imagenes/5.png)
 
+Durante el proceso de instalacion el software nos abrira varias ventanas de consola que no nos deben de preocupar
 
 ![Ready to install](imagenes/6.png)
 
-Durante el proceso de instalacion el software nos abrira varias ventanas de consola que no nos deben de preocupar
+Con esto concluye la instalacion del servidor web apache en windows, sin embargo recomiendo ampliamente configurarlo por motivos seguridad
 
 ![Completed Wizard](imagenes/7.png)
-
-Con esto concluye la instalacion del servidor web apache en windows, sin embargo recomiendo ampliamente configurarlo por motivos seguridad
 
 **Referencias**
 * http://httpd.apache.org/download.cgi
