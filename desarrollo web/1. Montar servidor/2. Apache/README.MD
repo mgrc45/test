@@ -18,7 +18,7 @@ Te pedira llenar algunos campos, el contenido no afecta a la instalacion
 
 ![Server information](imagenes/3.png)
 
-Tenemos 2 tipos de instalación típica y personalizada. Recomiendo instalar la versión **tipica** ya que no requerimos el uso de librerias de compilacion.
+Recomiendo instalar la versión **tipica** ya que no requerimos el uso de librerias de compilacion.
 
 ![Setup Type](imagenes/4.png)
 
@@ -30,7 +30,7 @@ Durante el proceso de instalacion el software nos abrira varias ventanas de cons
 
 ![Ready to install](imagenes/6.png)
 
-Con esto concluye la instalacion del servidor web apache en windows, sin embargo recomiendo ampliamente configurarlo por motivos seguridad
+Con esto concluye la instalacion del servidor web apache en windows, sin embargo recomiendo ampliamente configurarlo por motivos seguridad.
 
 ![Completed Wizard](imagenes/7.png)
 
