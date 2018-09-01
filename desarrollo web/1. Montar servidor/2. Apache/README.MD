@@ -1,59 +1,46 @@
-## Descargar el motor de la base de datos (MySQL)
+## Instalación de Apache en Windows 10
 
-Ruta del link de descarga
+Apache es uno de los servidores web mas utilizados por su estabilidad y desempeño. Es nativo en la mayoria de distribuciones de linux y de el se basan diferentes proyectos como **ApacheHaus**, **Apache Lounge**, **BitNami WAMP Stack**, **WampServer**, **XAMPP** entre otros.
 
-1. [MySQL Downloads](https://www.mysql.com/downloads/)
-2. [MySQL Product Archives](https://downloads.mysql.com/archives/)
-3. [MySQL Installer (Archived Versions)](https://downloads.mysql.com/archives/installer/)
-4. [mysql-installer-community-5.7.23.0.msi](https://dev.mysql.com/downloads/windows/installer/5.7.html)
+Descarga el paquete de instalacion para windows del servidor [apache 2.2.25](http://archive.apache.org/dist/httpd/binaries/win32/httpd-2.2.25-win32-x86-openssl-0.9.8y.msi)
 
-Unicamente motor de base de datos con instalador para windows
+![Installation Wizard](imagenes/0.png)
 
-> [mysql-5.7.23-winx64.msi (recomendada)](http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi)
+Acepta el acuerdo de licencia Apache License v2.0, para continuar con la instalacion
 
-Explicación de las versiones
+![License Agreement](imagenes/1.png)
 
-| Versión | Descripción |
-| --- | --- |
-| MySQL Community Server | Versión gratuita para un solo servidor |
-| MySQL Cluster | Versión para grupos de servidores |
-| MySQL Workbench | Herramienta de administración, monitoreo y modelado de la base de datos |
-| MySQL Connectors | Conectores para diferentes lenguajes de programación |
-| MySQL Enterprise Firewall | Permite filtrar las consultas maliciosas |
+Se mostrara un texto informativo con las caracteristicas de apache
 
-Explicación de los empaquetados
+![Read this](imagenes/2.png)
 
-<table>
- <tr>
-  <th>Nombre</th><th>Descripción</th>
- </tr>
- <tr>
-  <td><a href="https://dev.mysql.com/downloads/mysql/5.7.html">mysql-5.7.23-win64.zip</a></td>
-  <td>Unicamente motor de la base de datos para sistemas de 64 bits, sin instalador</td>
- </tr>
- <tr>
-  <td><a href="http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/mysql-5.7.23-winx64.msi">mysql-5.7.23-win64.msi</a></td>
-  <td>Unicamente motor de la base de datos para sistemas de 64 bits</td>
- </tr>
- <tr>
-  <td>mysql-essential-5.5.2-m2-win32.msi</td>
-  <td><strong>essential</strong>, hace referencia de que no incluye herramientas, unicamente el motor de la base de datos. 
-  <strong>m2</strong> indica que esta versión se encuentra en desarrollo.</td>
- </tr>
- <tr>
-  <td><a href="https://dev.mysql.com/downloads/windows/installer/5.7.html">mysql-installer-community-5.7.23.0.msi</a></td>
-  <td><strong>installer-community</strong>, este paquete incluye: Instalador de windows (MSI), Herramienta de configuración (configuration wizard), 
-  Conectores, Monitores, Proxy, Workbench ...</td>
- </tr>
-</table>
+Te pedira llenar algunos campos, el contenido no afecta a la instalacion
 
-Explicacion de las liberaciones
+![Server information](imagenes/3.png)
 
-| Generally Available (GA) | Versiones liberadas para producción |
-| --- | --- |
-| Developer Releases | Versiones en desarrollo |
+Tenemos 2 tipos de instalación típica y personalizada. Recomiendo instalar la versión **tipica** ya que no requerimos el uso de librerias de compilacion.
+
+![Setup Type](imagenes/4.png)
+
+La carpeta de instalación por defecto es **C:\Program Files (x86)\Apache Software Foundation\Apache2.2\\** y bastara con presionar siguiente e instalar.
+
+![Destination folder](imagenes/5.png)
+
+
+![Ready to install](imagenes/6.png)
+
+Durante el proceso de instalacion el software nos abrira varias ventanas de consola que no nos deben de preocupar
+
+![Completed Wizard](imagenes/7.png)
 
 **Referencias**
-* https://dev.mysql.com/downloads/mysql/
-* https://downloads.mysql.com/archives/installer/
-* http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/
+* http://httpd.apache.org/download.cgi
+* http://archive.apache.org/dist/httpd/binaries/win32/
+
+## Autores
+
+* [Angel González](https://github.com/mgrc45)
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
