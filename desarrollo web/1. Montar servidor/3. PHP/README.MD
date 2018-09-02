@@ -50,16 +50,22 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 
 ## Configurar
 
+Para realizar las configuraciones persistentes se debera editar el archivo de configuracion  `php.ini` ubicado en el directorio  `C:\Program Files\PHP\`
+
+**Tamaño maximo del archivo**
+
+~~~
+upload_max_filesize = 25M
+~~~
+
 **Compresion transparente**
 
 Ahorra ancho de banda al usar el algoritmo de compression gzip, sin embargo tiene que ser habilitado de forma manual. 
-Editando el archivo  `C:\Program Files\PHP\php.ini`
 
 ~~~
 zlib.output_compression = On
 zlib.output_compression_level = 9
 ~~~
-
 Al estar activa la compresion el servidor envia un header **Content-Encoding: gzip**
 
 **Depuracion de errores**
@@ -75,6 +81,7 @@ allow_call_time_pass_reference = On
 
 ## Referencias
 
+* http://php.net/manual/es/ini.core.php
 * http://php.net/manual/es/security.magicquotes.php (Depreciado)
 
 ## Autores
