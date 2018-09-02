@@ -1,14 +1,14 @@
 ## Instalación de PHP 7 en Windows 10
 
-Tras instalar el sevidor de apache 2.4.x podemos instalar el interprete de PHP el cual ya fue compilado para windows y dependiendo de la version necesitaremos un componente de Visual Studio.
+Tras instalar el sevidor de apache 2.4.x podemos instalar el interprete de PHP el cual fue compilado para windows y dependiendo de la version necesitaremos un componente de Visual Studio.
 
 > Las versiones **Thread Safe** son paquetes compilados para ser mas estables debido a su uso de multi-tareas teniendo repercusiones negativas en el desempeño
 
-**Descarga**
+**Descargar**
 * VC15: [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 * Paquete de PHP 7 compilado para windows [php-7.2.7-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.7-Win32-VC15-x64.zip).
 
-PHP 7 requiere el componente de Visual C++ Redistributable for Visual Studio 2017 [VC15](https://aka.ms/vs/15/release/VC_redist.x64.exe) para poder ejecutar el paquete [php-7.2.7-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.7-Win32-VC15-x64.zip).
+**Instalar**
 
 1. Creamos el directorio de PHP en windows `C:\Program Files\PHP\`
 
