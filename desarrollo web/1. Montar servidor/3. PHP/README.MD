@@ -53,7 +53,6 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 **Compresion transparente**
 
 Ahorra ancho de banda al usar el algoritmo de compression gzip, sin embargo tiene que ser habilitado de forma manual. 
-
 Editando el archivo  `C:\Program Files\PHP\php.ini`
 
 ~~~
@@ -63,15 +62,16 @@ zlib.output_compression_level = 9
 
 Al estar activa la compresion el servidor envia un header **Content-Encoding: gzip**
 
-**Conversion de caracteres**
+**Depuracion de errores**
+
+Estas opciones estan definidas para para depuracion y deberan ser cambiadas para produccion
 
 ~~~
-[iconv]
-iconv.input_encoding = utf-8
-iconv.internal_encoding = utf-8
-iconv.output_encoding = utf-8
+error_reporting = E_ALL & ~E_NOTICE
+display_errors = On
+display_startup_errors = On
+allow_call_time_pass_reference = On
 ~~~
-
 
 ## Referencias
 
