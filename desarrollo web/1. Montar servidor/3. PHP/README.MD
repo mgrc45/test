@@ -12,6 +12,12 @@ PHP 7 requiere el componente de Visual C++ Redistributable for Visual Studio 201
 
 3. Renombramos `php.ini-development` por `php.ini`
 
+4. Agregamos la siguiente linea en el archivo `C:\Program Files (x86)\Apache Software Foundation\Apache2.2\conf\httpd.conf`
+
+~~~
+LoadModule php5_module “C:/Program Files/PHP/php7apache2_4.dll”
+~~~
+
 **Referencias**
 
 * https://windows.php.net/downloads/releases/archives/
