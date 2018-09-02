@@ -21,6 +21,28 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 #END PHP INSTALLER EDITS - REMOVE ONLY ON UNINSTALL
 ~~~
 
+5. Remplazamos la siguiente linea
+
+~~~
+#
+# DirectoryIndex: sets the file that Apache will serve if a directory
+# is requested.
+#
+<IfModule dir_module>
+    DirectoryIndex index.html
+</IfModule>
+~~~
+
+~~~
+<IfModule dir_module>
+    DirectoryIndex index.php index.html
+    AddType application/x-httpd-php .php
+    AddType application/x-httpd-php .php7
+    AddType application/x-httpd-php .php5
+    AddType application/x-httpd-php-source .phps
+</IfModule>
+~~~
+
 **Referencias**
 
 * https://windows.php.net/downloads/releases/archives/
