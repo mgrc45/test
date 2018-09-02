@@ -6,7 +6,7 @@ PHP 7 requiere el componente de Visual C++ Redistributable for Visual Studio 201
 
 > Las versiones **Thread Safe** son paquetes compilados para ser mas estables debido a su uso de multi-tareas teniendo repercusiones negativas en el desempeño
 
-1. Creamos el directorio de PHP 7 en Windows 64 bits `C:\Program Files\PHP\`
+1. Creamos el directorio de PHP en windows `C:\Program Files\PHP\`
 
 2. Descomprimimos el paquete `php-7.2.7-Win32-VC15-x64` en el directorio recien creado
 
