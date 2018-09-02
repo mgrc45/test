@@ -1,4 +1,4 @@
-## Instalación de PHP 7 en Windows 10
+# Instalación de PHP 7 en Windows 10
 
 Tras instalar el sevidor de apache 2.4.x podemos instalar el interprete de PHP el cual fue compilado para windows y dependiendo de la version necesitaremos un componente de Visual Studio.
 
@@ -6,11 +6,12 @@ Debemos elegir es la versión **Thread Safe**, ya que es la que va con Apache, l
 
 La mayoria de servidores en internet usan Apache sobre linux combinacion tambien conocida como LAMP (Linux Apache MySQL Php) si bien vamos a usar un PC con Windows para desarrollar es deseable que nuestras aplicaciones corran lo más parecido posible para evitar problemas de compatibilidad al montarlo en un servidor de terceros.
 
-**Descargar**
+## Descargar
+
 * VC15: [Visual C++ Redistributable for Visual Studio 2017](https://aka.ms/vs/15/release/VC_redist.x64.exe)
 * Paquete de PHP 7 compilado para windows [php-7.2.7-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.7-Win32-VC15-x64.zip)
 
-**Instalar**
+## Instalar
 
 1. Creamos el directorio de PHP en windows `C:\Program Files\PHP\`
 
@@ -47,9 +48,9 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 </IfModule>
 ~~~
 
-**Configurar**
+## Configurar
 
-Compresion transparente
+**Compresion transparente**
 
 Ahorra ancho de banda al usar el algoritmo de compression gzip, sin embargo tiene que ser habilitado de forma manual. 
 
@@ -62,7 +63,17 @@ zlib.output_compression_level = 9
 
 Al estar activa la compresion el servidor envia un header **Content-Encoding: gzip**
 
-**Referencias**
+**Conversion de caracteres**
+
+~~~
+[iconv]
+iconv.input_encoding = utf-8
+iconv.internal_encoding = utf-8
+iconv.output_encoding = utf-8
+~~~
+
+
+## Referencias
 
 * https://windows.php.net/downloads/releases/archives/
 
