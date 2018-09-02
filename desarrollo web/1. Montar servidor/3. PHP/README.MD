@@ -6,35 +6,11 @@ PHP 7 requiere el componente de Visual C++ Redistributable for Visual Studio 201
 
 > Las versiones **Thread Safe** son paquetes compilados para ser mas estables debido a su uso de multi-tareas teniendo repercusiones negativas en el desempeño
 
-![Installation Wizard](imagenes/0.png)
+1. Creamos el directorio de PHP 7 en Windows 64 bits `C:\Program Files\PHP\`
 
-Acepta el acuerdo de licencia Apache License v2.0, para continuar con la instalación
+2. Descomprimimos el paquete `php-7.2.7-Win32-VC15-x64` en el directorio recien creado
 
-![License Agreement](imagenes/1.png)
-
-Se mostrará un texto informativo con las características de apache
-
-![Read this](imagenes/2.png)
-
-Te pedirá llenar algunos campos, el contenido no afecta a la instalación
-
-![Server information](imagenes/3.png)
-
-Recomiendo instalar la versión **tipica** ya que no requerimos el uso de librerías de compilación
-
-![Setup Type](imagenes/4.png)
-
-La carpeta de instalación por defecto es **C:\Program Files (x86)\Apache Software Foundation\Apache2.2\\** y bastara con presionar siguiente e instalar
-
-![Destination folder](imagenes/5.png)
-
-Durante el proceso de instalación el software nos abrirá varias ventanas de consola que no nos deben de preocupar
-
-![Ready to install](imagenes/6.png)
-
-Con esto concluye la instalación del servidor web apache en windows, sin embargo recomiendo ampliamente configurarlo por motivos seguridad
-
-![Completed Wizard](imagenes/7.png)
+3. Renombramos `php.ini-development` por `php.ini`
 
 **Referencias**
 
