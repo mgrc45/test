@@ -52,7 +52,9 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 
 Para realizar las configuraciones persistentes se debera editar el archivo de configuracion  `php.ini` ubicado en el directorio  `C:\Program Files\PHP\`
 
-**Tamaño maximo del archivo**
+**Tamaño maximo de subida**
+
+Define el tamaño maximo para subir un archivo
 
 ~~~
 upload_max_filesize = 25M
@@ -82,7 +84,7 @@ allow_call_time_pass_reference = On
 ## Referencias
 
 * http://php.net/manual/es/ini.core.php
-* http://php.net/manual/es/security.magicquotes.php (Depreciado)
+* http://php.net/manual/es/security.magicquotes.php (depreciado)
 
 ## Autores
 
