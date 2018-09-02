@@ -58,6 +58,7 @@ zlib.output_compression = On
 zlib.output_compression_level = 9
 ~~~
 
+Al estar activa la compresion el servidor envia un header: **Content-Encoding: gzip**
 
 **Referencias**
 
