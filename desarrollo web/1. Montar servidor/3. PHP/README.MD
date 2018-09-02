@@ -75,7 +75,7 @@ allow_call_time_pass_reference = On
 
 ## Referencias
 
-* https://windows.php.net/downloads/releases/archives/
+* http://php.net/manual/es/security.magicquotes.php (Depreciado)
 
 ## Autores
 
