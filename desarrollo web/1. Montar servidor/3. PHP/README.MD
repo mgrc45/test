@@ -1,8 +1,8 @@
-## Instalación de Apache en Windows 10
+## Instalación de PHP 7 en Windows 10
 
 Apache es uno de los servidores web más utilizados por su estabilidad y desempeño. Es nativo en la mayoría de distribuciones de linux y de él se basan diferentes proyectos como **ApacheHaus**, **Apache Lounge**, **BitNami WAMP Stack**, **WampServer**, **XAMPP** entre otros.
 
-Descarga el paquete de instalación para windows del servidor [apache 2.2.25](http://archive.apache.org/dist/httpd/binaries/win32/httpd-2.2.25-win32-x86-openssl-0.9.8y.msi).
+PHP 7 requiere el componente de Visual C++ Redistributable for Visual Studio 2017 [VC15](https://aka.ms/vs/15/release/VC_redist.x64.exe) para poder ejecutar el paquete [php-7.2.7-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.7-Win32-VC15-x64.zip).
 
 ![Installation Wizard](imagenes/0.png)
 
