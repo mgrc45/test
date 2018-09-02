@@ -37,6 +37,7 @@ Con esto concluye la instalación del servidor web apache en windows, sin embarg
 **Referencias**
 * http://httpd.apache.org/download.cgi
 * http://archive.apache.org/dist/httpd/binaries/win32/
+* http://httpd.apache.org/docs/2.2/platform/windows.html
 
 ## Autores
 
