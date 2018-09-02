@@ -54,8 +54,6 @@ Para realizar las configuraciones persistentes se debera editar el archivo de co
 
 **Tamaño maximo de subida**
 
-Define el tamaño maximo para subir un archivo
-
 ~~~
 upload_max_filesize = 25M
 ~~~
