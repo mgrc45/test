@@ -1,5 +1,7 @@
 ## Servicios
 
+Algunos de los siguientes servicios no estan disponibles debido a la compatibilidad de la compilacion con windows. En caso de presentar errores recomiendo habilitar `display_startup_errors` dentro del archivo de configuracion de PHP. Asi como tambien borrar el archivo `logs\httpd.pid` del directorio de Apache tras cada intento fallido.
+
 | Extensiones | Descripcion |
 | --- | --- |
 | bzip | Funciones de compresion |
