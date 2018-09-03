@@ -52,6 +52,12 @@ LoadModule php7_module "C:/Program Files/PHP/php7apache2_4.dll"
 
 Para realizar las configuraciones persistentes se debera editar el archivo de configuracion  `php.ini` ubicado en el directorio  `C:\Program Files\PHP\`
 
+**Codificación de caracteres**
+
+~~~
+default_charset = "UTF-8"
+~~~
+
 **Tamaño maximo de subida**
 
 ~~~
