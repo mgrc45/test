@@ -36,8 +36,7 @@ bin\httpd.exe -k install -n "Apache Server"
 > **Nota:** De forma automatica el instalador crea una excepcion para el firewall permitiendo el `puerto 80` para nuestro servidor `httpd.exe`
 
 **Referencias**
-* http://httpd.apache.org/docs/2.2/platform/windows.html
-* https://httpd.apache.org/docs/current/platform/windows.html
+* http://httpd.apache.org/docs/2.4/platform/windows.html
 
 ## Autores
 
