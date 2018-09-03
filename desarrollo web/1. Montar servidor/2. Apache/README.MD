@@ -17,23 +17,29 @@ Motivo por el cual usaremos una version compilada de terceros [apachelounge.com]
 
 2. Descomprimimos el contenido de `httpd-2.4.34-win64-VC15.zip\Apache24\` en el directorio recien creado
 
-3. Cambiar la ruta del servidor dentro del archivo de configuracion `C:\Program Files\Apache\conf\httpd.conf`
+3. Cambiamos la ruta del servidor dentro del archivo de configuracion `C:\Program Files\Apache\conf\httpd.conf`
 
 ~~~
 Define SRVROOT "C:/Program Files/Apache"
 ~~~
 
-4. Ejecutar la consola `cmd` como administrador
+4. Ejecutamos la consola `cmd` como administrador
 
-5. Entrar al directorio de Apache `C:\Program Files\Apache\`
+5. Entramos al directorio de Apache `C:\Program Files\Apache\`
 
-6. Instalar apache como servicio de windows, para desinstalar puede usar `bin\httpd.exe -k uninstall`
+6. Instalamos apache como servicio de windows, para desinstalar puede usar `bin\httpd.exe -k uninstall`
 
 ~~~
 bin\httpd.exe -k install -n "Apache Server"
 ~~~
 
-> **Nota:** De forma automatica el instalador crea una excepcion para el firewall permitiendo el `puerto 80` para nuestro servidor `httpd.exe`
+7. De forma automatica el instalador crea una excepcion para el firewall sin embargo agrego (Opcional)
+
+### Regla de firewall
+
+~~~
+NETSH advfirewall firewall add rule name="Apache Server 2.2" program="C:\Program Files\Apache\bin\httpd.exe" protocol=TCP localport=80 dir=in action=allow enable=yes
+~~~
 
 **Referencias**
 * http://httpd.apache.org/docs/2.4/platform/windows.html
