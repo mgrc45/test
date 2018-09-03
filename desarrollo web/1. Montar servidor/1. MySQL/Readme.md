@@ -53,7 +53,16 @@ Explicación de las liberaciones
 | --- | --- |
 | Developer Releases | Versiones en desarrollo |
 
-**Referencias**
+## Referencias
+
 * https://dev.mysql.com/downloads/mysql/
 * https://downloads.mysql.com/archives/installer/
 * http://mirror.csclub.uwaterloo.ca/mysql/Downloads/MySQL-5.7/
+
+## Autores
+
+* [Angel González](https://github.com/mgrc45)
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
