@@ -76,13 +76,13 @@ Estas opciones estan definidas para para depuracion y deberan ser cambiadas para
 error_reporting = E_ALL & ~E_NOTICE
 display_errors = On
 display_startup_errors = On
-allow_call_time_pass_reference = On
 ~~~
 
 ## Referencias
 
 * http://php.net/manual/es/ini.core.php
 * http://php.net/manual/es/security.magicquotes.php (depreciado)
+* http://php.net/manual/es/ini.core.php#ini.allow-call-time-pass-reference (depreciado)
 
 ## Autores
 
