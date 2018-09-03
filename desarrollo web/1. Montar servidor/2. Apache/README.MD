@@ -83,7 +83,7 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
     # doesn't give it to you.
     #
     # The Options directive is both complicated and important.  Please see
-    # http://httpd.apache.org/docs/2.2/mod/core.html#options
+    # http://httpd.apache.org/docs/2.4/mod/core.html#options
     # for more information.
     #
     Options Indexes FollowSymLinks
@@ -91,16 +91,14 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
     #
     # AllowOverride controls what directives may be placed in .htaccess files.
     # It can be "All", "None", or any combination of the keywords:
-    #   Options FileInfo AuthConfig Limit
+    #   AllowOverride FileInfo AuthConfig Limit
     #
     AllowOverride None
 
     #
     # Controls who can get stuff from this server.
     #
-    Order allow,deny
-    Allow from all
-
+    Require all granted
 </Directory>
 ~~~
 
