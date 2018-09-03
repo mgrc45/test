@@ -131,14 +131,12 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 6. Por seguridad evitamos mostrar detalles del servidor como la versión
 
 ~~~
-ServerSignature Off
-ServerTokens Prod
+ServerTokens ProductOnly
 ~~~
 
 7. Podemos elegir la codificación predeterminada de caracteres
 
 ~~~
-AddDefaultCharset on
 AddDefaultCharset utf-8
 #AddDefaultCharset ISO-8859-1
 ~~~
