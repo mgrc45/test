@@ -26,7 +26,7 @@ Define SRVROOT "C:/Program Files/Apache"
 6. Instalar el servidor de apache como servicio de windows, en caso de desear desinstalar puede usar `bin\httpd.exe -k uninstall`
 
 ~~~
-bin\httpd.exe -k install -n "Apache Server"
+bin\httpd.exe -k install
 ~~~
 
 3. Renombramos `php.ini-development` por `php.ini`
