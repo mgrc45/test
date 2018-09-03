@@ -29,7 +29,7 @@ Define SRVROOT "C:/Program Files/Apache"
 bin\httpd.exe -k install -n "Apache Server"
 ~~~
 
-> **Nota:** De forma automatica el instalador crea una excepcion para el firewall permitiendo el ´puerto 80´ para nuestro servidor `httpd.exe`
+> **Nota:** De forma automatica el instalador crea una excepcion para el firewall permitiendo el `puerto 80` para nuestro servidor `httpd.exe`
 
 **Referencias**
 * http://www.apachelounge.com/download/
