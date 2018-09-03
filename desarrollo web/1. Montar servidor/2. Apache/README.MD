@@ -94,7 +94,7 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 
 ~~~
 <Directory "C:/Users/Usuario/Google Drive/www">
-    Options FollowSymLinks -ExecCGI -Includes -Multiviews -Indexes
+    Options +FollowSymLinks -ExecCGI -Includes -Multiviews -Indexes
     AllowOverride All
     Require all granted
     #Require not ip 10.252.46.165
