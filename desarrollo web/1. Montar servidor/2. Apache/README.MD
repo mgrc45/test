@@ -36,7 +36,7 @@ bin\httpd.exe -k install -n "Apache Server"
 7. De forma automatica el instalador crea una excepcion para el firewall sin embargo agrego (Opcional)
 
 ~~~
-NETSH advfirewall firewall add rule name="Apache Server 2.2" program="C:\Program Files\Apache\bin\httpd.exe" protocol=TCP localport=80 dir=in action=allow enable=yes
+NETSH advfirewall firewall add rule name="Apache Server 2.4" program="C:\Program Files\Apache\bin\httpd.exe" protocol=TCP localport=80 dir=in action=allow enable=yes
 ~~~
 
 ## Configurar
