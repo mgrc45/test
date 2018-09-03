@@ -19,12 +19,6 @@ Apache es uno de los servidores web más utilizados por su estabilidad y desempe
 Define SRVROOT "C:/Program Files/Apache"
 ~~~
 
-Para evitar errores durante la instalacion debemos definir el nombre del servidor
-
-~~~
-ServerName localhost
-~~~
-
 4. Ejecutar la consola `cmd` como administrador
 
 5. Entrar al directorio de Apache `C:\Program Files\Apache\`
@@ -32,7 +26,7 @@ ServerName localhost
 6. Instalar el servidor de apache como servicio de windows, en caso de desear desinstalar puede usar `bin\httpd.exe -k uninstall`
 
 ~~~
-bin\httpd.exe -k install
+bin\httpd.exe -k install -n "Apache Server"
 ~~~
 
 3. Renombramos `php.ini-development` por `php.ini`
