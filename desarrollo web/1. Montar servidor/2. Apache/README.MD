@@ -128,7 +128,7 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 </Files>
 ~~~
 
-6. Por seguridad evitamos mostrar detalles del servidor como la versión
+6. Por seguridad evitamos mostrar la version del servidor
 
 ~~~
 ServerTokens ProductOnly
