@@ -68,21 +68,21 @@ http://httpd.apache.org/docs/2.4/mod/mod_alias.html
 
 ## Personalización: Redirijo las paginas
 
-~~~
-Simbolos:
- ^: Señala el inicio del patron.
- $: Señala que se termino de escribir un patron.
- ([A-Z]): Señala que solo acepta un caracter en mayuscula.
- ([A-Z]+): Señala que acepta varios caracteres mayusculas.
- ([0-9]+): Señala que acepta varios caracteres numericos.
- (.+): Señala que acepta varios tipos de caracteres.
- (.*): Señala que acepta varios tipos de caracteres.
- [R]: Redirecciona "302 Found"
- [R=permanent,L]: Redirecciona "301 Moved Permanently"
- no a las direcciones de salida
-~~~
+**Simbolos**
 
-```shell
+| Simbolo | Descripción |
+| --- | --- |
+| ^ | Señala el inicio del patron |
+| $ | Señala que se termino de escribir un patron |
+| ([A-Z]) | Señala que solo acepta un caracter en mayuscula |
+| ([A-Z]+) | Señala que acepta varios caracteres mayusculas |
+| ([0-9]+) | Señala que acepta varios caracteres numericos |
+| (.+) | Señala que acepta varios tipos de caracteres |
+| (.*) | Señala que acepta varios tipos de caracteres |
+| [R] | Redirecciona "302 Found" |
+| [R=permanent,L] | Redirecciona las direcciones de salida "301 Moved Permanently"  |
+
+~~~
 <IfModule rewrite_module>
  Options +FollowSymLinks
  RewriteEngine On
@@ -108,17 +108,14 @@ Simbolos:
  #http://localhost/email/imagenes/001/banner01.jpg
  # RewriteRule ^email/imagenes/([0-9]+)/(.+)$ /email/imagenes.php?id=$1&name=$2 [L] 
 </IfModule>
-```
+~~~
 
 ### Fuentes
 
-* http://httpd.apache.org/docs/2.2/en/howto/access.html#rewrite
 * http://httpd.apache.org/docs/2.4/rewrite/intro.html#regex
-
-### Mas info: RewriteRule Pattern Substitution
-
-* http://httpd.apache.org/docs/2.0/misc/rewriteguide.html
-* http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html
+* http://httpd.apache.org/docs/2.0/misc/rewriteguide.html#url (depreciado)
+* http://httpd.apache.org/docs/2.4/en/howto/access.html#rewrite
+* http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html
 * http://www.widexl.com/tutorials/mod_rewrite.html#rewriterule
 
 ## Autores
@@ -131,7 +128,7 @@ Este proyecto está licenciado bajo la licencia GNU General Public License v2.0.
 
 ## Modulos PHP 5
 
-```shell
+~~~
 <IfModule mod_php5.c>
 # Deshabilita el uso de variables globales
 php_flag register_globals Off
@@ -148,4 +145,4 @@ php_flag magic_quotes_gpc Off
 php_flag magic_quotes_runtime Off
 #php_admin_flag magic_quotes_sybase = Off
 </IfModule>
-```
+~~~
