@@ -19,7 +19,7 @@ La mayoria de servidores en internet usan Apache sobre linux combinacion tambien
 
 3. Renombramos `php.ini-development` por `php.ini`
 
-4. Agregamos la siguiente linea en el archivo `C:\Program Files (x86)\Apache Software Foundation\Apache2.2\conf\httpd.conf`
+4. Agregamos la siguiente linea en el archivo `C:\Program Files\Apache\conf\httpd.conf`
 
 ~~~
 #BEGIN PHP INSTALLER EDITS - REMOVE ONLY ON UNINSTALL
