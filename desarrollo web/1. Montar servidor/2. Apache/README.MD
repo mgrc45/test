@@ -116,29 +116,16 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 | Indexes | Devolverá una lista con los contenidos del directorio usando mod_autoindex |
 | MultiViews | Devuelve contenido diferente de forma transparente usando mod_negotiation su uso se puede observar en el header "Content-Location:" |
 
-5. Evito el acceso al archivo de configuración `.htaccess`
-
-~~~
-#
-# The following lines prevent .htaccess and .htpasswd files from being 
-# viewed by Web clients. 
-#
-<Files ".ht*">
-    Require all denied
-</Files>
-~~~
-
-6. Por seguridad evitamos mostrar la version del servidor
+5. Por seguridad evitamos mostrar la version del servidor
 
 ~~~
 ServerTokens ProductOnly
 ~~~
 
-7. Podemos elegir la codificación predeterminada de caracteres
+6. Podemos elegir la codificación predeterminada de caracteres
 
 ~~~
 AddDefaultCharset utf-8
-#AddDefaultCharset ISO-8859-1
 ~~~
 
 **Referencias**
