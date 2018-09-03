@@ -103,5 +103,10 @@ Al interior del archivo de configuracion `php.ini` puede habilitar las extension
 Las extensiones que recomiendo descomentar son las siguientes
 
 ~~~
+extension=imap
+extension=mbstring
+extension=exif      ; Must be after mbstring as it depends on it
 extension=mysqli
+extension=openssl
+extension=snmp
 ~~~
