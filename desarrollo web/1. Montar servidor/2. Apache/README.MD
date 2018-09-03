@@ -11,7 +11,7 @@ Apache es uno de los servidores web más utilizados por su estabilidad y desempe
 
 1. Creamos el directorio de Apache en windows `C:\Program Files\Apache\`
 
-2. Descomprimimos el contenido del paquete `httpd-2.4.34-win64-VC15` en el directorio recien creado
+2. Descomprimimos el contenido de `httpd-2.4.34-win64-VC15.zip\Apache24\` en el directorio recien creado
 
 3. Cambiar la ruta del servidor dentro del archivo de configuracion `C:\Program Files\Apache\conf\httpd.conf`
 
@@ -23,7 +23,7 @@ Define SRVROOT "C:/Program Files/Apache"
 
 5. Entrar al directorio de Apache `C:\Program Files\Apache\`
 
-6. Instalar apache como servicio de windows, desinstalar puede eliminar el servicio usando `bin\httpd.exe -k uninstall`
+6. Instalar apache como servicio de windows, para desinstalar puede usar `bin\httpd.exe -k uninstall`
 
 ~~~
 bin\httpd.exe -k install -n "Apache Server"
