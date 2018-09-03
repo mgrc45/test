@@ -23,14 +23,13 @@ Define SRVROOT "C:/Program Files/Apache"
 
 5. Entrar al directorio de Apache `C:\Program Files\Apache\`
 
-6. Por ultimo iniciamos el instalador para que nos levante un servicio de windows
+6. Instalar apache como servicio de windows, desinstalar puede eliminar el servicio usando `bin\httpd.exe -k uninstall`
 
 ~~~
 bin\httpd.exe -k install -n "Apache Server"
 ~~~
-Para desinstalar puede eliminar el servicio usando `bin\httpd.exe -k uninstall`
 
-**Nota:** De forma automatica el instalador crea una excepcion para el firewall permitiendo el ´puerto 80´ para nuestro servidor `httpd.exe`
+> **Nota:** De forma automatica el instalador crea una excepcion para el firewall permitiendo el ´puerto 80´ para nuestro servidor `httpd.exe`
 
 **Referencias**
 * http://www.apachelounge.com/download/
