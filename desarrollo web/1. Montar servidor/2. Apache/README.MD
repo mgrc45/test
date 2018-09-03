@@ -2,6 +2,12 @@
 
 Apache es uno de los servidores web más utilizados por su estabilidad y desempeño. Es nativo en la mayoría de distribuciones de linux y de él se basan diferentes proyectos como **ApacheHaus**, **Apache Lounge**, **BitNami WAMP Stack**, **WampServer**, **XAMPP** entre otros.
 
+## Descargar
+
+* VC15: [Visual C++ Redistributable for Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=746572)
+* Paquete de Apache 2.4 compilado para windows [httpd-2.4.34-win64-VC15.zip](http://home.apache.org/~steffenal/VC15/binaries/httpd-2.4.34-win64-VC15.zip)
+
+
 Descarga el paquete de instalación para windows del servidor [apache 2.2.25](http://archive.apache.org/dist/httpd/binaries/win32/httpd-2.2.25-win32-x86-openssl-0.9.8y.msi).
 
 ![Installation Wizard](imagenes/0.png)
@@ -35,9 +41,11 @@ Con esto concluye la instalación del servidor web apache en windows, sin embarg
 ![Completed Wizard](imagenes/7.png)
 
 **Referencias**
+* http://www.apachelounge.com/download/
 * http://httpd.apache.org/download.cgi
 * http://archive.apache.org/dist/httpd/binaries/win32/
 * http://httpd.apache.org/docs/2.2/platform/windows.html
+* https://httpd.apache.org/docs/current/platform/windows.html
 
 ## Autores
 
