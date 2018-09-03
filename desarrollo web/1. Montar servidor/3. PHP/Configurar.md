@@ -2,7 +2,7 @@
 
 Tras instalar el servidor de Apache este aún no está preparado, por lo cual se deben seguir los siguientes pasos
 
-1. Entrar al directorio de Apache `C:\Program Files (x86)\Apache Software Foundation\Apache2.2\`
+1. Entrar al directorio de Apache `C:\Program Files\Apache\`
 
 2. Editar el archivo de configuración como administrador  `conf\httpd.conf`
 
