@@ -7,6 +7,33 @@ Apache es uno de los servidores web más utilizados por su estabilidad y desempe
 * VC15: [Visual C++ Redistributable for Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=746572)
 * Paquete de Apache 2.4 compilado para windows [httpd-2.4.34-win64-VC15.zip](http://home.apache.org/~steffenal/VC15/binaries/httpd-2.4.34-win64-VC15.zip)
 
+## Instalar
+
+1. Creamos el directorio de Apache en windows `C:\Program Files\Apache\`
+
+2. Descomprimimos el contenido del paquete `httpd-2.4.34-win64-VC15` en el directorio recien creado
+
+3. Cambiar la ruta del servidor dentro del archivo de configuracion `C:\Program Files\Apache\conf\httpd.conf`
+
+~~~
+Define SRVROOT "C:/Program Files/Apache"
+~~~
+
+4. Ejecutar la consola `cmd` como administrador
+
+5. Entrar al directorio de Apache `C:\Program Files\Apache\`
+
+6. Instalar el servidor de apache como servicio de windows, en caso de desear desinstalar puede usar `bin\httpd.exe -k uninstall`
+
+~~~
+bin\httpd.exe -k install -n "Apache Server"
+~~~
+
+3. Renombramos `php.ini-development` por `php.ini`
+
+4. Agregamos la siguiente linea en el archivo `C:\Program Files (x86)\Apache Software Foundation\Apache2.2\conf\httpd.conf`
+
+
 
 Descarga el paquete de instalación para windows del servidor [apache 2.2.25](http://archive.apache.org/dist/httpd/binaries/win32/httpd-2.2.25-win32-x86-openssl-0.9.8y.msi).
 
