@@ -53,7 +53,7 @@ NETSH advfirewall firewall add rule name="Apache Server 2.2" program="C:\Program
 # documents. By default, all requests are taken from this directory, but
 # symbolic links and aliases may be used to point to other locations.
 #
-DocumentRoot "C:/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs"
+DocumentRoot "${SRVROOT}/htdocs"
 ~~~
 
 ~~~
@@ -73,7 +73,7 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 #
 # This should be changed to whatever you set DocumentRoot to.
 #
-<Directory "C:/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs">
+<Directory "${SRVROOT}/htdocs">
     #
     # Possible values for the Options directive are "None", "All",
     # or any combination of:
@@ -159,10 +159,10 @@ AddDefaultCharset utf-8
 ~~~
 
 **Referencias**
+* http://httpd.apache.org/docs/2.4/howto/ssi.html
 * http://httpd.apache.org/docs/2.4/platform/windows.html
-* http://httpd.apache.org/docs/2.2/howto/ssi.html
-* http://httpd.apache.org/docs/2.2/mod/core.html#options
-* http://httpd.apache.org/docs/2.2/en/howto/access.html#host
+* http://httpd.apache.org/docs/2.4/mod/core.html#options
+* http://httpd.apache.org/docs/2.4/en/howto/access.html#host
 
 ## Autores
 
