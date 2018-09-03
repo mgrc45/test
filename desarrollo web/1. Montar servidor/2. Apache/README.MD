@@ -106,15 +106,14 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 <Directory "C:/Users/Usuario/Google Drive/www">
     Options FollowSymLinks -ExecCGI -Includes -Multiviews -Indexes
     AllowOverride All
-    Order allow,deny
-    #Deny from 127.0.0.1 host.example.com
-    Allow from all
+    Require all granted
+    #Require not ip 10.252.46.165
 </Directory>
 ~~~
 
 | Configuración | Descripción |
 | --- | --- |
-| Order | Controla el orden en que se evalúan las directivas Allow y Deny |
+| Require | Controla el acceso de a los clientes filtrando por ip o host |
 | AllowOverride | Cuando el valor de esta directiva es None, entonces los ficheros .htaccess son ignorados |
 
 **Options**
@@ -134,11 +133,9 @@ DocumentRoot "C:/Users/Usuario/Google Drive/www"
 # The following lines prevent .htaccess and .htpasswd files from being 
 # viewed by Web clients. 
 #
-<FilesMatch "^\.ht">
-    Order allow,deny
-    Deny from all
-    Satisfy All
-</FilesMatch>
+<Files ".ht*">
+    Require all denied
+</Files>
 ~~~
 
 6. Por seguridad evitamos mostrar detalles del servidor como la versión
