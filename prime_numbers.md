@@ -37,20 +37,44 @@ Otras maneras de atacar el problema de los numeros primos son:
 
 ### Teoria de números
 
-Los números primos de un número **N** son menores a la **raiz de N**
+**Limite**
 
-| Expresión | Formula |
+Los números primos de un número **N** son menores a la **raiz de N**. Esto debido a que si multiplicamos 2 numeros **a**y **b** que sean mayores a la **raiz de N** estos formaran un numero superior a **N**.
+
+Ejemplo: **N**=12,**r**=Raiz de 12=3.46, {**a**,**b**} > 3.46
+
+| a * b | resultado |
 | --- | --- |
-| d \| x | d * k = x |
+| 4 * 4 | 16 |
+| 4 * 5 | 20 |
 
-Por lo que si continuamos buscando sus multiplos restando 1 a **x** y sumando 1 a **d** nos daremos cuenta que existira un limite en que la diferencia sea la unidad y de seguir calculando solo se repetiran operaciones. Por ejemplo cuando **x** sea 12 el limite es su raiz 3.46 en enteros es 3.
+**Factorización**
 
-| 1 \| 12 | 1 * 12 = 12 |
-| --- | --- |
-| 2 \| 12 | 2 * 6 = 12 |
-| 3 \| 12 | 3 * 4 = 12 |
+Cualquier número **N** puede descomponerse en sus multiplos, realizando una diferencia igual a ambos factores (**d** y **k**) hasta llegar a la **raiz de N**.
 
-Factorización / Descomposición de un número en factores primos.
+Ejemplo: **N**=12, **r**=Raiz de 12=3.46
+
+| d \| N | d * k = N | |
+| --- | --- | |
+| 1 \| 12 | 1 * 12 = 12 | |
+| 2 \| 12 | 2 * 6 = 12 | |
+| 3 \| 12 | 3 * 4 = 12 | |
+| 4 \| 12 | 4 * 3 = 12 | Repetido |
+| 3 \| 12 | 6 * 2 = 12 | Repetido |
+
+Si continuamos buscando sus multiplos restando 1 a **x** y sumando 1 a **d** nos daremos cuenta que existirá un limite **raiz de N** ó en que la diferencia sea la unidad, de seguir calculando solo se repetiran operaciones.
+
+**Descomposición en sus valores primos**
+
+Cualquier numero **N** no primo puede ser factorizado por numeros primos. 
+
+Ejemplo: **N**=25
+
+| 25%1 = 0 | | | 25%5 = 0 | |
+|---|---|---|---|---|
+| 1 | 2 | 3 | 5 | 6 |
+|   |   |   | Raiz | |
+
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD)
 
 ```c++
@@ -66,5 +90,3 @@ int main()
 
 Complemento de x > x
 > Multiplicativa, conmutativa, asociativa, distributiva
-
-
