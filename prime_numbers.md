@@ -48,6 +48,20 @@ Por ejemplo, en el caso de 12 su raiz es 3.46, como no es exacta validamos hasta
 | 2 \| 12 | 2 * 6 = 12 |
 | 3 \| 12 | 3 * 4 = 12 |
 
+Factorización / Descomposición de un número en factores primos.
+Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD)
+
+```c++
+#include <iostream>
+#include <algorithm>
+
+int main()
+{
+  cout << std::__gcd(100,24);
+  return 0;
+}
+```
+
 Complemento de x > x
 > Multiplicativa, conmutativa, asociativa, distributiva
 
