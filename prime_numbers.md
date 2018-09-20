@@ -1,5 +1,5 @@
 # Numeros primos
-Por definicion son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad.
+Los numeros primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad.
 
 Para obtener los numeros primos se utiliza el siguiente algoritmo trivial
 
@@ -25,6 +25,8 @@ int main ()
 ```
 Sin embargo este algoritmo tiene una complejidad muy alta **n^2**
 
+## Formas de aproximación a los numeros primos
+
 Otras maneras de atacar el problema de los numeros primos son:
 
 * Teorema de divisibilidad de un numero
@@ -33,15 +35,15 @@ Otras maneras de atacar el problema de los numeros primos son:
 * Función Z
 * Teoria de números
 
-**Teoria de números**
+### Teoria de números
 
-Los números primos de un número N son menores a la **raiz de N**
+Los números primos de un número **N** son menores a la **raiz de N**
 
 | Expresión | Formula |
 | --- | --- |
 | d \| x | d * k = x |
 
-Por ejemplo, en el caso de 12 su raiz es 3.46, como no es exacta validamos hasta su inmediato superior 4 ó hasta que la diferencia entre divisor y dividendo sea la unidad. Por que continuar solo nos llevaria a repetir operaciones.
+Por lo que si continuamos buscando sus multiplos restando 1 a **x** y sumando 1 a **d** nos daremos cuenta que existira un limite en que la diferencia sea la unidad y de seguir calculando solo se repetiran operaciones. Por ejemplo cuando **x** sea 12 el limite es su raiz 3.46 en enteros es 3.
 
 | 1 \| 12 | 1 * 12 = 12 |
 | --- | --- |
