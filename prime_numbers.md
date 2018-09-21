@@ -133,6 +133,13 @@ int main()
 ```
 Este algoritmo tiene una complejidad de **N log N** para ser creada y **constante** para ser consultada
 
+## Referencias
+https://www.geeksforgeeks.org/sieve-of-eratosthenes/
+
+## Autores
+* Angel Gonzalez
+* Luis Rodriguez
+
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
 ```c++
