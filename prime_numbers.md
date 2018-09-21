@@ -99,8 +99,38 @@ Cualquier número entero positivo no primo **N** puede descomponerse en en facto
 ### Criba de eratóstenes
 
 Este metodo consiste en eliminar duplicados.
- 1. Crea un arreglo hasta el numero indicado
- 2. Tacha los multiplos con un arreglo de bits
+ 1. Crea un arreglo de bits "primos[0..n]" e inicie todos los valores en true
+ 2. Llene con false los valores que no son primos
+
+```c++
+#include<iostream>
+
+using namespace std; 
+ 
+void SieveOfEratosthenes(int n) 
+{
+ bool primos[n+1];
+ memset(primos, true, sizeof(primos));
+ 
+ for (int p=2; p*p<=n; p++) 
+   if (prime[p] == true) 
+   {//Actualiza todos los multiplos de "p"
+     for (int i=p*2; i<=n; i += p) prime[i] = false; 
+   }
+ 
+ //Imprime todos los numeros primos
+ for (int p=2; p<=n; p++) 
+   if (prime[p]) cout<<p<<" ";
+} 
+
+int main() 
+{ 
+  int n = 30;
+  //Imprime los numeros primos menores o iguales a "n"
+  SieveOfEratosthenes(n); 
+  return 0; 
+} 
+```
 Este algoritmo tiene una complejidad de **N log N** para ser creada y **constante** para ser consultada
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
