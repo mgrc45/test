@@ -39,7 +39,7 @@ Otras maneras de atacar el problema de los numeros primos son:
 
 **Limite**
 
-Los números primos de un número **N** son menores a la **raiz de N**. Esto debido a que si multiplicamos 2 numeros **a**y **b** que sean mayores a la **raiz de N** estos formaran un numero superior a **N**.
+Los números primos de un número **N** son menores a la **raiz de N**. Esto debido a que si multiplicamos 2 numeros **a** y **b** que sean mayores a la **raiz de N** estos formaran un numero superior a **N**.
 
 Ejemplo: **N**=12,**r**=Raiz de 12=3.46, {**a**,**b**} > 3.46
 
@@ -55,7 +55,7 @@ Cualquier número **N** puede descomponerse en sus multiplos, realizando una dif
 Ejemplo: **N**=12, **r**=Raiz de 12=3.46
 
 | d \| N | d * k = N | |
-| --- | --- | |
+| --- | --- | --- |
 | 1 \| 12 | 1 * 12 = 12 | |
 | 2 \| 12 | 2 * 6 = 12 | |
 | 3 \| 12 | 3 * 4 = 12 | |
@@ -68,12 +68,12 @@ Si continuamos buscando sus multiplos restando 1 a **x** y sumando 1 a **d** nos
 
 Cualquier numero **N** no primo puede ser factorizado por numeros primos. 
 
-Ejemplo: **N**=25
+Ejemplo: **N**=23 (Divisor), **r**=Raiz de 23 =4.7=5
 
-| 25%1 = 0 | | | 25%5 = 0 | |
-|---|---|---|---|---|
-| 1 | 2 | 3 | 5 | 6 |
-|   |   |   | Raiz | |
+| Resto| | | | | |
+|---|---|---|---|---|---|
+| Dividendo| 1 | 2 | 3 | 5 | 7 |
+| |   |   |   | Raiz | |
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD)
 
