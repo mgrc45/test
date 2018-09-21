@@ -50,7 +50,7 @@ Ejemplo: **N**=12,**r**=Raiz de 12=3.46, {**a**,**b**} > 3.46
 
 **Factorización**
 
-Cualquier número **N** puede descomponerse en sus multiplos, realizando una diferencia igual a ambos factores (**d** y **k**) hasta llegar a la **raiz de N**.
+Cualquier número entero positivo **N** puede descomponerse en sus multiplos, realizando una diferencia igual a ambos factores (**d** y **k**) hasta llegar a la **raiz de N**.
 
 Ejemplo: **N**=12, **r**=Raiz de 12=3.46
 
@@ -64,18 +64,46 @@ Ejemplo: **N**=12, **r**=Raiz de 12=3.46
 
 Si continuamos buscando sus multiplos restando 1 a **x** y sumando 1 a **d** nos daremos cuenta que existirá un limite **raiz de N** ó en que la diferencia sea la unidad, de seguir calculando solo se repetiran operaciones.
 
+```c++
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int is_prime(int n)
+{
+ int r = sqrt(n);
+ for (int i = 2; i <= r; i++)
+  if (n%i==0) return false;
+ return true;
+}
+
+int main ()
+{
+ int cnt,j;
+ cout<<"1"<<endl;
+ for (cnt = 2; cnt<100; cnt++)
+   if (is_prime(cnt)) cout<<cnt<<endl;
+}
+```
+Este algoritmo tiene una complejidad menor **Raiz de N**
+
 **Descomposición en sus valores primos**
 
-Cualquier numero **N** no primo puede ser factorizado por numeros primos. 
+Cualquier número entero positivo no primo **N** puede descomponerse en en factores primos.
 
-Ejemplo: **N**=23 (Divisor), **r**=Raiz de 23 =4.7=5
+| N | Factores |
+|---|---|
+| 12 | 2 * 2 * 3 |
 
-| Resto| | | | | |
-|---|---|---|---|---|---|
-| Dividendo| 1 | 2 | 3 | 5 | 7 |
-| |   |   |   | Raiz | |
+### Criba de eratóstenes
 
-Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD)
+Este metodo consiste en eliminar duplicados.
+ 1. Crea un arreglo hasta el numero indicado
+ 2. Tacha los multiplos con un arreglo de bits
+ 
+
+Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
 ```c++
 #include <iostream>
