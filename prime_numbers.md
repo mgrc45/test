@@ -101,7 +101,7 @@ Cualquier número entero positivo no primo **N** puede descomponerse en en facto
 Este metodo consiste en eliminar duplicados.
  1. Crea un arreglo hasta el numero indicado
  2. Tacha los multiplos con un arreglo de bits
- 
+Este algoritmo tiene una complejidad de **N log N**
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
