@@ -158,6 +158,7 @@ Este algoritmo tiene una complejidad de **N log N** para ser creada y **constant
 ## Referencias
 https://www.geeksforgeeks.org/sieve-of-eratosthenes/<br/>
 https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/<br/>
+http://www.dma.fi.upm.es/recursos/aplicaciones/matematica_discreta/web/aritmetica_modular/divisibilidad.html<br/>
 https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos<br/>
 
 ## Autores
