@@ -155,6 +155,43 @@ int main()
 ```
 Este algoritmo tiene una complejidad de **N log N** para ser creada y **constante** para ser consultada
 
+Sin embargo aun tiene posibilidad de ser optimizado, cuando examinamos el segundo ciclo que actualiza los multiplos, encontramos repeticiones al momento de incrementar el contador **i** con la formula **i=i+p** como se muestra en el siguiente ejemlo. Por lo cual cambiando la formula a **i=i+2p** se evitan operaciones inecesarias.
+
+Ejemplo:
+
+* **2**: 4,6,8,10,12,14,16,18,20
+* **3**: 6,9,12,15,18,21
+* **5**: 10,15,20
+
+```c++
+#include<iostream>
+
+using namespace std;
+ 
+void criba(int n)
+{
+ int p,i;
+ int primos[n+1] = {1,1};
+ 
+ //Actualiza todos los multiplos
+ for (p=2; p<=n; p++)
+   if (primos[p] == false)
+     for (i=p+p; i<=n; i+=p*2) primos[i] = true;
+ 
+ //Imprime los numeros primos
+ for (p=0; p<=n; p++)
+   if (primos[p] == false) cout<<p<<" ";
+} 
+
+int main()
+{
+  int n = 100;
+  criba(n);
+  return 0;
+}
+```
+Este algoritmo tiene una complejidad algo menor de de **N log N** para ser creada y **constante** para ser consultada
+
 ## Glosario
 * **Múltiplos**: Números que contienen a otros exactamente.
 * **Factores**: Números que se multiplican para formar otro.
