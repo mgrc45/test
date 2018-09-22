@@ -3,7 +3,6 @@
 ## Numeros primos
 
 Los numeros primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad. Se puede decir que un numero primo tiene como factor unicamente a la unidad y a si mismo.
-El número 1 sólo tiene un divisor, por eso no lo consideramos primo.
 
 > El número 1 sólo tiene un divisor, por eso no lo consideramos primo. La unidad no esta considerada como un número primo ni compuesto.
 
@@ -43,34 +42,7 @@ Otras maneras de atacar el problema de los numeros primos son:
 
 Los números compuestos tienen varios factores ademas del uno y de si mismo. Otra forma de expresar los números compuestos es como productos de potencias de números primos, a dicha expresión se le llama descomposición de un número en factores primos.
 
-**Factorización**
-
-Para descomponer un número en factores efectuamos sucesivas divisiones entre sus divisores primos hasta obtener un uno como cociente.
-
-
-Optimizaciones basadas en la teoria de numeros.
-
-El limite de la busqueda para un numero primo es la
-
-**Factorización**
-
-
-**Limite**
-
-Los números primos de un número **N** son menores a la **raiz de N**. Esto debido a que si multiplicamos 2 numeros **a** y **b** que sean mayores a la **raiz de N** estos formaran un numero superior a **N**.
-
-Ejemplo: **N**=12,**r**=Raiz de 12=3.46, {**a**,**b**} > 3.46
-
-| a * b | resultado |
-| --- | --- |
-| 4 * 4 | 16 |
-| 4 * 5 | 20 |
-
-**Factorización**
-
-Cualquier número entero positivo **N** puede descomponerse en sus multiplos, realizando una diferencia igual a ambos factores (**d** y **k**) hasta llegar a la **raiz de N**.
-
-Ejemplo: **N**=12, **r**=Raiz de 12=3.46
+Ejemplo: **N**=12
 
 | d \| N | d * k = N | |
 | --- | --- | --- |
@@ -80,7 +52,37 @@ Ejemplo: **N**=12, **r**=Raiz de 12=3.46
 | 4 \| 12 | 4 * 3 = 12 | Repetido |
 | 3 \| 12 | 6 * 2 = 12 | Repetido |
 
-Si continuamos buscando sus multiplos restando 1 a **x** y sumando 1 a **d** nos daremos cuenta que existirá un limite **raiz de N** ó en que la diferencia sea la unidad, de seguir calculando solo se repetiran operaciones.
+**Propiedad de la factorización: Efecto espejo**
+
+Al realizar la factorización de un número **N** en sus factores **d** y **k** llega un punto en que sus operaciones resultan repetidas intercambiando el valor de **k** por **d**. Este punto es alcanzado cuando se llega a la **raiz de N** motivo por el cual podemos usar esta propiedad de la factorización como limite para evitar duplicar operaciones.
+
+```c++
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int is_prime(int n)
+{
+ int r = sqrt(n);
+ for (int i = 2; i <= r; i++)
+  if (n%i==0) return false;
+ return true;
+}
+
+int main ()
+{
+ int cnt,j;
+ cout<<"1"<<endl;
+ for (cnt = 2; cnt<100; cnt++)
+   if (is_prime(cnt)) cout<<cnt<<endl;
+}
+```
+Este algoritmo tiene una complejidad menor **Raiz de N**
+
+Otra propiedad que podemos aprovechar para simplificar los numeros primos es.
+
+
 
 ```c++
 #include<iostream>
@@ -151,9 +153,15 @@ int main()
 ```
 Este algoritmo tiene una complejidad de **N log N** para ser creada y **constante** para ser consultada
 
+## Glosario
+**Múltiplos**: Números que contienen a otros exactamente.
+**Factores**: Números que se multiplican para formar otro.
+
+
 ## Referencias
 https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/
+https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos
 
 ## Autores
 * Angel Gonzalez
