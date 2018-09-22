@@ -1,5 +1,11 @@
-# Numeros primos
-Los numeros primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad.
+# Teoria de números
+
+## Numeros primos
+
+Los numeros primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad. Se puede decir que un numero primo tiene como factor unicamente a la unidad y a si mismo.
+El número 1 sólo tiene un divisor, por eso no lo consideramos primo.
+
+> El número 1 sólo tiene un divisor, por eso no lo consideramos primo. La unidad no esta considerada como un número primo ni compuesto.
 
 Para obtener los numeros primos se utiliza el siguiente algoritmo trivial
 
@@ -18,24 +24,36 @@ int is_prime(int n)
 int main ()
 {
  int cnt,j;
- cout<<"1"<<endl;
  for (cnt = 2; cnt<100; cnt++)
    if (is_prime(cnt)) cout<<cnt<<endl;
 }
 ```
 Sin embargo este algoritmo tiene una complejidad muy alta **n^2**
 
-## Formas de aproximación a los numeros primos
+### Formas de aproximación a los numeros primos
 
 Otras maneras de atacar el problema de los numeros primos son:
 
 * Teorema de divisibilidad de un numero
 * Criba de eratóstenes
 * Raiz de N
-* Función Z
 * Teoria de números
 
-### Teoria de números
+## Números compuestos
+
+Los números compuestos tienen varios factores ademas del uno y de si mismo. Otra forma de expresar los números compuestos es como productos de potencias de números primos, a dicha expresión se le llama descomposición de un número en factores primos.
+
+**Factorización**
+
+Para descomponer un número en factores efectuamos sucesivas divisiones entre sus divisores primos hasta obtener un uno como cociente.
+
+
+Optimizaciones basadas en la teoria de numeros.
+
+El limite de la busqueda para un numero primo es la
+
+**Factorización**
+
 
 **Limite**
 
@@ -135,6 +153,7 @@ Este algoritmo tiene una complejidad de **N log N** para ser creada y **constant
 
 ## Referencias
 https://www.geeksforgeeks.org/sieve-of-eratosthenes/
+https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/
 
 ## Autores
 * Angel Gonzalez
