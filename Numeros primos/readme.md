@@ -250,7 +250,7 @@ Esta version puede determinar los numeros primos que factorizan a un numero **N*
 * [geeksforgeeks.org: Sieve of eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
 * [dma.fi.upm.es: Aritmetica modular - Divisibilidad](http://www.dma.fi.upm.es/recursos/aplicaciones/matematica_discreta/web/aritmetica_modular/divisibilidad.html)
 * [maribellopezmozo.webnode.es: Teoría de números](https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/)
-* [es.slideshare.net: Multiplos, Factores, Numeros primos y compuestos](https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos)
+* [es.slideshare.net: Múltiplos, Factores, Numeros primos y compuestos](https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos)
 
 ## Autores
 * [Angel González](https://github.com/mgrc45)
