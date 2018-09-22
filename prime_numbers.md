@@ -165,18 +165,21 @@ Ejemplo:
 
 ```c++
 #include<iostream>
+#include<cmath> 
 
 using namespace std;
  
 void criba(int n)
 {
- int p,i;
+ int p,i,i2;
  int primos[n+1] = {1,1};
  
  //Actualiza todos los multiplos
  for (p=2; p<=n; p++)
-   if (primos[p] == false)
-     for (i=p*p; i<=n; i+=p*2) primos[i] = true;
+   if (primos[p] == false) {
+     i2=(p==2)?2:2*p;
+     for (i=p*p; i<=n; i+=i2) primos[i] = true;
+   }
  
  //Imprime los numeros primos
  for (p=0; p<=n; p++)
@@ -204,8 +207,8 @@ http://www.dma.fi.upm.es/recursos/aplicaciones/matematica_discreta/web/aritmetic
 https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos<br/>
 
 ## Autores
-* Angel Gonzalez
-* Luis Rodriguez
+* [Angel Gonzalez](https://github.com/mgrc45)
+* [Luis Rodriguez](https://github.com/ChOmPsJr)
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
