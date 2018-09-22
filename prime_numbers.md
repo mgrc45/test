@@ -151,8 +151,8 @@ int main()
 Este algoritmo tiene una complejidad de **N log N** para ser creada y **constante** para ser consultada
 
 ## Glosario
-**Múltiplos**: Números que contienen a otros exactamente.
-**Factores**: Números que se multiplican para formar otro.
+* **Múltiplos**: Números que contienen a otros exactamente.
+* **Factores**: Números que se multiplican para formar otro.
 
 
 ## Referencias
