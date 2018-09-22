@@ -133,18 +133,17 @@ using namespace std;
  
 void criba(int n)
 {
- int p;
- bool primos[n+1];
- memset(primos, true, sizeof(primos));
+ int p,i;
+ int primos[n+1] = {1,1};
  
- //Actualiza todos los multiplos de "p"
- for (p=2; p*p<=n; p++)
-   if (prime[p] == true)
-     for (int i=p*2; i<=n; i+=p) prime[i] = false;
+ //Actualiza todos los multiplos
+ for (p=2; p<=n; p++)
+   if (primos[p] == false)
+     for (i=p+p; i<=n; i+=p) primos[i] = true;
  
  //Imprime los numeros primos
- for (p=2; p<=n; p++)
-   if (prime[p]) cout<<p<<" ";
+ for (p=0; p<=n; p++)
+   if (primos[p] == false) cout<<p<<" ";
 } 
 
 int main()
