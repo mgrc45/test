@@ -122,31 +122,29 @@ Este metodo consiste en eliminar duplicados.
 ```c++
 #include<iostream>
 
-using namespace std; 
+using namespace std;
  
-void SieveOfEratosthenes(int n) 
+void criba(int n)
 {
  bool primos[n+1];
  memset(primos, true, sizeof(primos));
  
- for (int p=2; p*p<=n; p++) 
-   if (prime[p] == true) 
-   {//Actualiza todos los multiplos de "p"
-     for (int i=p*2; i<=n; i += p) prime[i] = false; 
-   }
+ //Actualiza todos los multiplos de "p"
+ for (int p=2; p*p<=n; p++)
+   if (prime[p] == true)
+     for (int i=p*2; i<=n; i+=p) prime[i] = false;
  
- //Imprime todos los numeros primos
- for (int p=2; p<=n; p++) 
+ //Imprime los numeros primos
+ for (int p=2; p<=n; p++)
    if (prime[p]) cout<<p<<" ";
 } 
 
-int main() 
-{ 
-  int n = 30;
-  //Imprime los numeros primos menores o iguales a "n"
-  SieveOfEratosthenes(n); 
-  return 0; 
-} 
+int main()
+{
+  int n = 100;
+  criba(n);
+  return 0;
+}
 ```
 Este algoritmo tiene una complejidad de **N log N** para ser creada y **constante** para ser consultada
 
