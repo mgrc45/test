@@ -2,11 +2,11 @@
 
 ## Numeros primos
 
-Los numeros primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad. Se puede decir que un numero primo tiene como factor unicamente a la unidad y a si mismo.
+Los números primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad. Se puede decir que un número primo tiene como factor unicamente a la unidad y a si mismo.
 
 > El número 1 sólo tiene un divisor, por eso no lo consideramos primo. La unidad no esta considerada como un número primo ni compuesto.
 
-Para obtener los numeros primos se utiliza el siguiente algoritmo trivial
+Para obtener los números primos se utiliza el siguiente algoritmo trivial
 
 ```c++
 #include<iostream>
@@ -29,14 +29,15 @@ int main ()
 ```
 Sin embargo este algoritmo tiene una complejidad muy alta **n^2**
 
-### Formas de aproximación a los numeros primos
+### Formas de aproximación a los números primos
 
 Otras maneras de atacar el problema de los numeros primos son:
 
 * Teorema de divisibilidad de un numero
+* Probar todos los números
 * Criba de eratóstenes
-* Raiz de N
 * Teoria de números
+* Raiz de N
 
 ## Números compuestos
 
@@ -44,7 +45,7 @@ Los números compuestos tienen varios factores ademas del uno y de si mismo. Otr
 
 > Podemos decir que si un número **N** no es dividido por un número primo, entonces es un número primo.
 
-Ejemplo: **N**=12
+Ejemplo: **N**=12, **Raiz de N*=3.46=>4
 
 | d \| N | d * k = N | |
 | --- | --- | --- |
