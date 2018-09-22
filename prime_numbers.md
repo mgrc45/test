@@ -101,6 +101,8 @@ int is_prime(int n)
 {
  if (n<2) return false;
  if (n==2) return true;
+ 
+ //Valido pares
  //if (n%2==0) return false;
  if (n&1==0) return false;
  
