@@ -14,3 +14,9 @@ int main()
 
 Complemento de x > x
 > Multiplicativa, conmutativa, asociativa, distributiva
+
+* Teorema de Euler
+* Pequeño teorema de Fermat
+* Criterio de Euler
+* Teorema de Lagrange
+* Aritmética de saturación
