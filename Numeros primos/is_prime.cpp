@@ -1,4 +1,4 @@
-// Este codigo valida si un número es primo con la funcion "is_prime"
+// Valida si un número es primo con la funcion "is_prime"
 
 #include<iostream>
 #include<cmath>
