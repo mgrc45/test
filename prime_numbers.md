@@ -134,7 +134,7 @@ using namespace std;
 void criba(int n)
 {
  int p,i;
- int primos[n+1] = {1,1};
+ bool primos[n+1] = {1,1};
  
  //Actualiza todos los multiplos
  for (p=2; p<=n; p++)
@@ -172,7 +172,7 @@ using namespace std;
 void criba(int n)
 {
  int p,i,i2;
- int primos[n+1] = {1,1};
+ bool primos[n+1] = {1,1};
  
  //Actualiza todos los multiplos
  for (p=2; p<=n; p++)
