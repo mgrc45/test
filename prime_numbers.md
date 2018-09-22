@@ -15,6 +15,7 @@ using namespace std;
 
 int is_prime(int n)
 {
+ if (n<2) return false;
  for (int i = 2; i < n; i++)
   if (n%i==0) return false;
  return true;
@@ -66,6 +67,7 @@ using namespace std;
 
 int is_prime(int n)
 {
+ if (n<2) return false;
  int r = sqrt(n);
  for (int i = 2; i <= r; i++)
   if (n%i==0) return false;
@@ -97,6 +99,7 @@ using namespace std;
 
 int is_prime(int n)
 {
+ if (n<2) return false;
  if (n%2==0) return false;
  
  int r = sqrt(n);
