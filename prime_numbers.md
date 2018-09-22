@@ -176,7 +176,7 @@ void criba(int n)
  //Actualiza todos los multiplos
  for (p=2; p<=n; p++)
    if (primos[p] == false)
-     for (i=p+p; i<=n; i+=p*2) primos[i] = true;
+     for (i=p*p; i<=n; i+=p*2) primos[i] = true;
  
  //Imprime los numeros primos
  for (p=0; p<=n; p++)
