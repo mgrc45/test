@@ -247,14 +247,14 @@ Esta version puede determinar los numeros primos que factorizan a un numero **N*
 
 
 ## Referencias
-https://www.geeksforgeeks.org/sieve-of-eratosthenes/<br/>
-https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/<br/>
-http://www.dma.fi.upm.es/recursos/aplicaciones/matematica_discreta/web/aritmetica_modular/divisibilidad.html<br/>
-https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos<br/>
+* [geeksforgeeks.org: Sieve of eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
+* [maribellopezmozo.webnode.es: Teoría de números](https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/)
+* [dma.fi.upm.es: Aritmetica modular - Divisibilidad](http://www.dma.fi.upm.es/recursos/aplicaciones/matematica_discreta/web/aritmetica_modular/divisibilidad.html)
+* [es.slideshare.net: Multiplos, Factores, Numeros primos y compuestos](https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos)
 
 ## Autores
-* [Angel Gonzalez](https://github.com/mgrc45)
-* [Luis Rodriguez](https://github.com/ChOmPsJr)
+* [Angel González](https://github.com/mgrc45)
+* [Luis Rodríguez](https://github.com/ChOmPsJr)
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
