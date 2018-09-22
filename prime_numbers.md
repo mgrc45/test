@@ -22,8 +22,7 @@ int is_prime(int n)
 
 int main ()
 {
- int cnt,j;
- for (cnt = 2; cnt<100; cnt++)
+ for (int cnt = 2; cnt<100; cnt++)
    if (is_prime(cnt)) cout<<cnt<<endl;
 }
 ```
@@ -75,9 +74,7 @@ int is_prime(int n)
 
 int main ()
 {
- int cnt,j;
- cout<<"1"<<endl;
- for (cnt = 2; cnt<100; cnt++)
+ for (int cnt = 2; cnt<100; cnt++)
    if (is_prime(cnt)) cout<<cnt<<endl;
 }
 ```
@@ -103,9 +100,7 @@ int is_prime(int n)
 
 int main ()
 {
- int cnt,j;
- cout<<"1"<<endl;
- for (cnt = 2; cnt<100; cnt++)
+ for (int cnt = 2; cnt<100; cnt++)
    if (is_prime(cnt)) cout<<cnt<<endl;
 }
 ```
