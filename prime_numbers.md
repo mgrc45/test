@@ -42,6 +42,8 @@ Otras maneras de atacar el problema de los numeros primos son:
 
 Los números compuestos tienen varios factores ademas del uno y de si mismo. Otra forma de expresar los números compuestos es como productos de potencias de números primos, a dicha expresión se le llama descomposición de un número en factores primos.
 
+> Podemos decir que si un número **N** no es dividido por un número primo, entonces es un número primo.
+
 Ejemplo: **N**=12
 
 | d \| N | d * k = N | |
