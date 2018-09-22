@@ -1,6 +1,6 @@
 # Teoria de números
 
-## Numeros primos
+## Números primos
 
 Los números primos son aquellos que solo pueden ser divididos de manera exacta por si mismos y por la unidad. Se puede decir que un número primo tiene como factor unicamente a la unidad y a si mismo.
 
@@ -248,8 +248,8 @@ Esta version puede determinar los numeros primos que factorizan a un numero **N*
 
 ## Referencias
 * [geeksforgeeks.org: Sieve of eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
-* [maribellopezmozo.webnode.es: Teoría de números](https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/)
 * [dma.fi.upm.es: Aritmetica modular - Divisibilidad](http://www.dma.fi.upm.es/recursos/aplicaciones/matematica_discreta/web/aritmetica_modular/divisibilidad.html)
+* [maribellopezmozo.webnode.es: Teoría de números](https://maribellopezmozo.webnode.es/sexto-grado/matematicas/teoria-de-numeros/)
 * [es.slideshare.net: Multiplos, Factores, Numeros primos y compuestos](https://es.slideshare.net/Crisalys/power-ponit-mltiplos-factores-nmeros-primos-y-compuestos)
 
 ## Autores
