@@ -80,9 +80,12 @@ int main ()
 ```
 Este algoritmo tiene una complejidad menor **Raiz de N**
 
-Otra propiedad que podemos aprovechar para simplificar los numeros primos es.
+Otra propiedad que podemos aprovechar para simplificar los numeros primos es la **paridad de una función** la cual indica que el producto de dos funciones impares es una función par. Misma se puede aplicar a la teoria de números.
 
-
+Ejemplo:
+ 1 + 1 = 2
+ 3 + 3 = 6
+ 5 + 5 = 10
 
 ```c++
 #include<iostream>
@@ -92,8 +95,10 @@ using namespace std;
 
 int is_prime(int n)
 {
+ if (n%2==0) return false;
+ 
  int r = sqrt(n);
- for (int i = 2; i <= r; i++)
+ for (int i = 3; i <= r; i=+2)
   if (n%i==0) return false;
  return true;
 }
@@ -104,15 +109,7 @@ int main ()
    if (is_prime(cnt)) cout<<cnt<<endl;
 }
 ```
-Este algoritmo tiene una complejidad menor **Raiz de N**
-
-**Descomposición en sus valores primos**
-
-Cualquier número entero positivo no primo **N** puede descomponerse en en factores primos.
-
-| N | Factores |
-|---|---|
-| 12 | 2 * 2 * 3 |
+Este algoritmo tiene una complejidad algo menor que la anterior
 
 ### Criba de eratóstenes
 
