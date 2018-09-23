@@ -30,6 +30,12 @@
 | ( a / b ) % m | [ (a % m) / ( b % m ) ] % m | Error: Esta relación no se cumple  |
 |  a * b<sup>-1</sup> % m |  | Se usa euclides extendido |
 
+| 3 <sup>10</sup> % 7 | [ (3 <sup>5</sup> % 7) * (3 <sup>5</sup> % 7) ] % 7 | [ 5 * 5 ] % 7 | 4 |
+|---|---|---|---|
+| 3 <sup>5</sup> % 7 | [ (3 <sup>4</sup> % 7) * (3 <sup>1</sup> % 7) ] % 7 | [ 4 * 3 ] % 7 | 5 |
+| 3 <sup>4</sup> % 7 | [ (3 <sup>2</sup> % 7) * (3 <sup>2</sup> % 7) ] % 7 | [ 2 * 2 ] % 7 | 4 |
+| 3 <sup>2</sup> % 7 | [ (3 <sup>1</sup> % 7) * (3 <sup>1</sup> % 7) ] % 7 | [ 3 * 3 ] % 7 | 2 |
+| 3 <sup>1</sup> % 7 | 3 <sup>1</sup> % 7 | | 3 |
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
