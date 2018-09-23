@@ -71,6 +71,13 @@ lli expBinnaria(lli a, lli b, lli m)
 | ( a + b ) % m | [ (a % m) + (b % m) ] % m |
 |---|---|
 
+| 3 x 10 % 7 | [ ( 3 * 5 ) % 7 + ( 3 * 5 ) % 7 ] % 7 | 15 % 7 + 15 % 7  | 4 |
+|---|---|---|---|
+| 3 x 10 % 7 | ( 3 * 5 ) % 7 + ( 3 * 5 ) % 7 | | 1 |
+| 3 x 5 % 7 | ( 3 * 4 ) % 7 + ( 3 * 1 ) % 7 | | 2 |
+| 3 x 4 % 7 | ( 3 * 2 ) % 7 + ( 3 * 2 ) % 7 | | 5 |
+| 3 x 2 % 7 | ( 3 * 1 ) % 7 + ( 3 * 1 ) % 7 | 3 + 3 | 6 |
+| 3 x 1 % 7 | ( 3 * 1 ) % 7 | | 3 |
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
