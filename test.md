@@ -37,6 +37,25 @@
 | 3 <sup>2</sup> % 7 | [ (3 <sup>1</sup> % 7) * (3 <sup>1</sup> % 7) ] % 7 | [ 3 * 3 ] % 7 | 2 |
 | 3 <sup>1</sup> % 7 | 3 <sup>1</sup> % 7 | | 3 |
 
+**Implementacion de la exponenciación binaria**
+
+```c++
+typedef long long int lli;
+
+lli expBinnaria(lli a, lli b, lli m)
+{
+  if (b==1) return a % m;
+  if (b%2==0) {
+    n = expBinaria( a, b/2, m ) % m;
+    return (n*n) % m;
+  }
+  else {
+    n = expBinaria( a, b-1, m ) % m;
+    return (n*a%m) % m;
+  }
+}
+```
+
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
 ```c++
