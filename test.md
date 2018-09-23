@@ -20,6 +20,13 @@
 | 3 <sup>2</sup> = 3 <sup>1</sup> * 3 <sup>1</sup> | 9 | |
 | 3 <sup>1</sup> = 3 <sup>1</sup> | | |
 
+### Propiedades de aritmetica modular
+
+| ( a + b ) % m | ( a % m + b % m ) % m |
+|---|---|
+| ( a * b ) % m | [ (a % m) * (b % m) ] % m |
+| ( a - b ) % m | [ (a - b + m) ] % m |
+| ( a / b ) % m | [ (a % m) / ( b % m ) ] % m |
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
