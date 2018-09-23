@@ -30,14 +30,17 @@
 | ( a / b ) % m | [ (a % m) / ( b % m ) ] % m | Error: Esta relación no se cumple  |
 |  a * b<sup>-1</sup> % m |  | Se usa euclides extendido |
 
+#### Exponenciación binaria
+
+| ( a * b ) % m | [ (a % m) * (b % m) ] % m |
+|---|---|
+
 | 3 <sup>10</sup> % 7 | [ (3 <sup>5</sup> % 7) * (3 <sup>5</sup> % 7) ] % 7 | [ 5 * 5 ] % 7 | 4 |
 |---|---|---|---|
 | 3 <sup>5</sup> % 7 | [ (3 <sup>4</sup> % 7) * (3 <sup>1</sup> % 7) ] % 7 | [ 4 * 3 ] % 7 | 5 |
 | 3 <sup>4</sup> % 7 | [ (3 <sup>2</sup> % 7) * (3 <sup>2</sup> % 7) ] % 7 | [ 2 * 2 ] % 7 | 4 |
 | 3 <sup>2</sup> % 7 | [ (3 <sup>1</sup> % 7) * (3 <sup>1</sup> % 7) ] % 7 | [ 3 * 3 ] % 7 | 2 |
 | 3 <sup>1</sup> % 7 | 3 <sup>1</sup> % 7 | | 3 |
-
-**Implementacion de la exponenciación binaria**
 
 ```c++
 typedef long long int lli;
@@ -55,6 +58,19 @@ lli expBinnaria(lli a, lli b, lli m)
   }
 }
 ```
+
+#### Multiplicación binaria
+
+| 3 * 10 | ( 3 * 5 ) + ( 3 * 5 ) | 15 + 15 | 30 |
+|---|---|---|---|
+| 3 * 5 | ( 3 * 4 ) + ( 3 * 1 ) | 12 + 3 | 15 |
+| 3 * 4 | ( 3 * 2 ) + ( 3 * 2 ) | 6 + 6 | 12 |
+| 3 * 2 | ( 3 * 1 ) + ( 3 * 1 ) | 3 + 3 | 6 |
+| 3 * 1 | | | 3 |
+
+| ( a + b ) % m | [ (a % m) + (b % m) ] % m |
+|---|---|
+
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
