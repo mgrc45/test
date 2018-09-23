@@ -1,20 +1,25 @@
-Esto es un texto con nota al pie [^1]
+## Exponenciación binaria
 
-[^nota1]
+- a <sup>b</sup> mod **m**
+- a <= 2 <sup>63</sup>
+- b <= 2 <sup>9180</sup>
 
-superindice^3^
+### Divide y venceras
 
-```math
-You can use $$\LaTeX$$ to typeset formulas. A formula can be displayed inline, e.g. $$e=mc^2$$, or as a block:
-$$\int_\Omega \nabla u \cdot \nabla v~dx = \int_\Omega fv~dx$$
-Also check out this [LaTeX introduction](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
+| a <sup>b</sup> = a <sup>b/2</sup> * a <sup>b/2</sup> |
+|---|
+| a <sup>b/2</sup> = a <sup>b/4</sup> * a <sup>b/4</sup> |
+| ... |
+| a <sup>2</sup> = a <sup>1</sup> * a <sup>1</sup> |
+| a <sup>1</sup> = a <sup>1</sup> |
 
-display
-```
+| 3 <sup>10</sup> = 3 <sup>5</sup> * 3 <sup>5</sup> | 243 * 243 | 59049 |
+|---|---|---|
+| 3 <sup>5</sup> = 3 <sup>1</sup> * 3 <sup>4</sup> | 243 | |
+| 3 <sup>4</sup> = 3 <sup>2</sup> * 3 <sup>2</sup> | 81 | |
+| 3 <sup>2</sup> = 3 <sup>1</sup> * 3 <sup>1</sup> | 9 | |
+| 3 <sup>1</sup> = 3 <sup>1</sup> | | |
 
-Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
-
-$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
 
