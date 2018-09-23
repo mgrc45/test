@@ -28,7 +28,7 @@
 | ( a * b ) % m | [ (a % m) * (b % m) ] % m | Se aplica para exponentes |
 | ( a - b ) % m | [ (a - b + m) ] % m | |
 | ( a / b ) % m | [ (a % m) / ( b % m ) ] % m | Error: Esta relación no se cumple  |
-|  a * b<sup>-1</sup> % m | Se usa euclides extendido |  |
+|  a * b<sup>-1</sup> % m |  | Se usa euclides extendido |
 
 
 Mínimo Común Múltiplo (MCM), Máximo Común Divisor (MCD), Greatest Common Divisor (GCD), Complemento
