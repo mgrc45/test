@@ -22,8 +22,9 @@
 
 ### Propiedades de aritmetica modular
 
-| ( a + b ) % m | [ (a % m) + (b % m) ] % m | Se aplica para sumas |
+| Origen | Factorización | Uso |
 |---|---|---|
+| ( a + b ) % m | [ (a % m) + (b % m) ] % m | Se aplica para sumas |
 | ( a * b ) % m | [ (a % m) * (b % m) ] % m | Se aplica para exponentes |
 | ( a - b ) % m | [ (a - b + m) ] % m | |
 | ( a / b ) % m | [ (a % m) / ( b % m ) ] % m | Error: Esta relación no se cumple  |
